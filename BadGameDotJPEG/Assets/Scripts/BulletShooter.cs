@@ -3,13 +3,16 @@ using System.Collections;
 
 public class BulletShooter : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	float fireRate;
+	float spreadAngle;
+	Vector3 direction;
+
+	void Awake () {
+		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-	
+		
 	}
+
 }
