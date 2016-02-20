@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
-public class BulletShooterEditor : MonoBehaviour {
+[CustomEditor(typeof(BulletShooter))]
+public class BulletShooterEditor : Editor {
 
-	// Use this for initialization
-	void Start () {
-	
+	BulletShooter targetShooter;
+
+	void OnSceneGUI () {
+		targetShooter = (BulletShooter)target;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
