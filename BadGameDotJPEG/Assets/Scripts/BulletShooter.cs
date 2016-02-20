@@ -3,9 +3,9 @@ using System.Collections;
 
 public class BulletShooter : MonoBehaviour {
 
-	float fireRate;
-	float spreadAngle;
-	Vector3 direction;
+	public float fireRate;
+	public float spreadAngle = 30f;
+	public Vector3 direction = -Vector3.right;
 
 	void Awake () {
 		
