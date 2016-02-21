@@ -5,7 +5,11 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:BadGameDotJPEG/Assets/Pictures/SpriteSheets/KnifeSkel.anim
   m_Name: 
+=======
+  m_Name: PepsoSkel
+>>>>>>> 8d707cadfd8fe5d06c77f8aab70ddaaa465eefe6:BadGameDotJPEG/Assets/Pictures/SpriteSheets/PepsoSkel.anim
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0

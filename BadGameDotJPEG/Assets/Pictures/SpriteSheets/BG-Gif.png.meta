@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 8fd917e821e8a0f42949902dfebbdc2a
+timeCreated: 1456046025
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BG-Gif_0
+    21300002: BG-Gif_1
+    21300004: BG-Gif_2
+    21300006: BG-Gif_3
+    21300008: BG-Gif_4
+    21300010: BG-Gif_5
+    21300012: BG-Gif_6
+    21300014: BG-Gif_7
+    21300016: BG-Gif_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BG-Gif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1386
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -341.5, y: 297.6842}
+        - {x: -341.5, y: -296.3158}
+        - {x: 341.5, y: -296.3158}
+        - {x: 341.5, y: 297.6842}
+    - name: BG-Gif_1
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1386
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -341.3333, y: 297.6842}
+        - {x: -341.3333, y: -296.3158}
+        - {x: 342.6667, y: -296.3158}
+        - {x: 342.6667, y: 297.6842}
+    - name: BG-Gif_2
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1386
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -341.16663, y: 297.6842}
+        - {x: -341.16663, y: -296.3158}
+        - {x: 341.83337, y: -296.3158}
+        - {x: 341.83337, y: 297.6842}
+    - name: BG-Gif_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 693
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -341.5, y: 297.8421}
+        - {x: -341.5, y: -296.1579}
+        - {x: 341.5, y: -296.1579}
+        - {x: 341.5, y: 297.8421}
+    - name: BG-Gif_4
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 693
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -341.3333, y: 297.8421}
+        - {x: -341.3333, y: -296.1579}
+        - {x: 342.6667, y: -296.1579}
+        - {x: 342.6667, y: 297.8421}
+    - name: BG-Gif_5
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 693
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -341.16663, y: 297.8421}
+        - {x: -341.16663, y: -296.1579}
+        - {x: 341.83337, y: -296.1579}
+        - {x: 341.83337, y: 297.8421}
+    - name: BG-Gif_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BG-Gif_7
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 0
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BG-Gif_8
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 0
+        width: 798
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,4 +14,22 @@ public static class Globals
         public static bool Bomb;
         public static bool Fire;
     }
+    public static float camWidth
+    {
+        get
+        {
+            Camera cam = Camera.main;
+            return 2f * cam.orthographicSize * cam.aspect;
+        }
+        private set { }
+    }
+    public static float camHeight
+    {
+        get
+        {
+            Camera cam = Camera.main;
+            return 2f * cam.orthographicSize;
+        }
+        private set { }
+    }
 }
