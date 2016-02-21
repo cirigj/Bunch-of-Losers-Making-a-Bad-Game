@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: 666a48553409ba044b79cccca8ace0ea
-timeCreated: 1456038476
+timeCreated: 1456052724
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: FloppitySkele_0
+    21300002: FloppitySkele_1
+    21300004: FloppitySkele_2
+    21300006: FloppitySkele_3
+    21300008: FloppitySkele_4
+    21300010: FloppitySkele_5
+    21300012: FloppitySkele_6
+    21300014: FloppitySkele_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +38,259 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: FloppitySkele_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -121}
+        - {x: 6, y: -132}
+        - {x: 12, y: -140}
+        - {x: 28, y: -140}
+        - {x: 44, y: -72}
+        - {x: 125, y: -15}
+        - {x: 125, y: 54}
+        - {x: 53, y: 120}
+        - {x: -143, y: 120}
+        - {x: -143, y: -103}
+        - {x: -28, y: -140}
+        - {x: -13, y: -140}
+        - {x: -4, y: -124}
+        - {x: -4, y: -107}
+        - {x: -5, y: -60}
+    - name: FloppitySkele_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 624
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: -123}
+        - {x: 16, y: -137}
+        - {x: 30, y: -140}
+        - {x: 32, y: -140}
+        - {x: 70, y: -133}
+        - {x: 132, y: 21}
+        - {x: 132, y: 110}
+        - {x: 98, y: 114}
+        - {x: -32, y: 114}
+        - {x: -147, y: 37}
+        - {x: -147, y: 26}
+        - {x: -145, y: 24}
+        - {x: -132, y: 23}
+        - {x: -111, y: 22}
+        - {x: -101, y: 26}
+        - {x: -70, y: 35}
+        - {x: -34, y: -136}
+        - {x: -29, y: -140}
+        - {x: -18, y: -140}
+        - {x: -13, y: -136}
+        - {x: -4, y: -124}
+        - {x: 0, y: -113}
+    - name: FloppitySkele_2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 624
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: -139}
+        - {x: 37, y: -132}
+        - {x: 36, y: -126}
+        - {x: 42, y: -81}
+        - {x: 22, y: 0}
+        - {x: 14, y: 7}
+        - {x: 11, y: 8}
+        - {x: 19, y: 7}
+        - {x: 24, y: 27}
+        - {x: 126, y: 88}
+        - {x: 126, y: 98}
+        - {x: 125, y: 99}
+        - {x: 92, y: 95}
+        - {x: 38, y: 108}
+        - {x: -35, y: 108}
+        - {x: -124, y: -14}
+        - {x: -124, y: -24}
+        - {x: -104, y: -14}
+        - {x: -37, y: -136}
+        - {x: -33, y: -140}
+        - {x: -18, y: -140}
+        - {x: 0, y: -129}
+        - {x: -3, y: -108}
+        - {x: -2, y: -113}
+        - {x: 18, y: -135}
+    - name: FloppitySkele_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: -135}
+        - {x: 22, y: -139}
+        - {x: 44, y: -139}
+        - {x: 60, y: -70}
+        - {x: 22, y: -2}
+        - {x: 14, y: 5}
+        - {x: 11, y: 6}
+        - {x: 19, y: 5}
+        - {x: 74, y: 42}
+        - {x: 97, y: 95}
+        - {x: 97, y: 128}
+        - {x: 42, y: 128}
+        - {x: -36, y: 99}
+        - {x: -75, y: 42}
+        - {x: -96, y: 7}
+        - {x: -96, y: -18}
+        - {x: -86, y: -38}
+        - {x: -73, y: -48}
+        - {x: -38, y: -139}
+        - {x: -16, y: -139}
+        - {x: -5, y: -127}
+        - {x: 0, y: -105}
+        - {x: 6, y: -120}
+    - name: FloppitySkele_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 312
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: -128}
+        - {x: 24, y: -139}
+        - {x: 28, y: -140}
+        - {x: 32, y: -140}
+        - {x: 38, y: -126}
+        - {x: 39, y: -73}
+        - {x: 21, y: -1}
+        - {x: 14, y: 7}
+        - {x: 21, y: 3}
+        - {x: 108, y: 81}
+        - {x: 108, y: 116}
+        - {x: -29, y: 116}
+        - {x: -119, y: 9}
+        - {x: -119, y: -22}
+        - {x: -105, y: -12}
+        - {x: -52, y: -140}
+        - {x: -16, y: -140}
+        - {x: 2, y: -115}
+        - {x: -15, y: -77}
+        - {x: 1, y: -103}
+    - name: FloppitySkele_5
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 312
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 119, y: 102}
+        - {x: 89, y: 114}
+        - {x: -72, y: 114}
+        - {x: -151, y: 48}
+        - {x: -151, y: -19}
+        - {x: -30, y: -140}
+        - {x: 46, y: -140}
+        - {x: 126, y: 59}
+        - {x: 126, y: 95}
+    - name: FloppitySkele_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: -140}
+        - {x: 29, y: -140}
+        - {x: 45, y: -72}
+        - {x: 131, y: 34}
+        - {x: 135, y: 40}
+        - {x: 135, y: 47}
+        - {x: 49, y: 106}
+        - {x: 27, y: 120}
+        - {x: -126, y: 120}
+        - {x: -145, y: 110}
+        - {x: -145, y: 66}
+        - {x: -34, y: -140}
+        - {x: -13, y: -140}
+        - {x: -4, y: -124}
+        - {x: -4, y: -107}
+        - {x: 0, y: -122}
+    - name: FloppitySkele_7
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 312
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: -139}
+        - {x: 24, y: -139}
+        - {x: 33, y: -62}
+        - {x: 103, y: -2}
+        - {x: 104, y: -1}
+        - {x: 104, y: 33}
+        - {x: -2, y: 151}
+        - {x: -109, y: 151}
+        - {x: -109, y: 50}
+        - {x: -30, y: -139}
+        - {x: -8, y: -139}
+        - {x: -3, y: -131}
+        - {x: -5, y: -61}
+        - {x: -2, y: -119}
+        - {x: 7, y: -137}
     outline: []
   spritePackingTag: 
   userData: 
