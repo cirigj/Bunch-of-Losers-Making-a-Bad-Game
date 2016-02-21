@@ -29,25 +29,36 @@ public class BulletShooterEditor : Editor {
 		}
 		targetShooter.direction.Normalize();
 
+		if (Tools.current == Tool.None) {
+			EditorSaves.customToolUp = true;
+		}
+		if (Tools.current != Tool.None) {
+			EditorSaves.customToolUp = false;
+		}
+
 		normal = targetShooter.transform.forward;
 		direction = targetShooter.transform.rotation * targetShooter.direction;
 		directionOrthag = Quaternion.AngleAxis(-90f, normal) * direction;
-		if (Event.current.type == EventType.keyDown && Event.current.keyCode == KeyCode.Alpha3) {
-			if (Tools.current != Tool.None) {
-				EditorSaves.prevTool = Tools.current;
-				Tools.current = Tool.None;
-				EditorSaves.customToolUp = true;
-			}
-		}
 		if (Event.current.type == EventType.keyDown && Event.current.keyCode == KeyCode.Alpha1) {
 			if (Tools.current == Tool.None) {
 				Tools.current = EditorSaves.prevTool;
 				EditorSaves.customToolUp = false;
 			}
+			else if (Tools.current != Tool.None) {
+				EditorSaves.prevTool = Tools.current;
+				Tools.current = Tool.None;
+				EditorSaves.customToolUp = true;
+			}
 		}
 		if (EditorSaves.customToolUp) {
 			Handles.color = Color.white;
-			Quaternion newRotation = Handles.RotationHandle(Quaternion.LookRotation(direction, normal), targetShooter.transform.position);
+			EditorGUI.BeginChangeCheck();
+			Quaternion newRotation = Handles.RotationHandle(Quaternion.LookRotation(targetShooter.direction, normal), targetShooter.transform.position);
+			if (EditorGUI.EndChangeCheck()) {
+				targetShooter.direction = newRotation * Vector3.forward;
+				direction = targetShooter.transform.rotation * targetShooter.direction;
+			}
+			targetShooter.direction = Quaternion.Inverse(targetShooter.transform.rotation) * direction;
 			Handles.color = JBirdEngine.ColorLibrary.MoreColors.purple;
 			targetShooter.spreadAngle = Handles.ScaleValueHandle(targetShooter.spreadAngle,
 				targetShooter.transform.position + direction * HandleUtility.GetHandleSize(targetShooter.transform.position) * 1.5f,
