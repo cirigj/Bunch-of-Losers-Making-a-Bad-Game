@@ -26,7 +26,7 @@ public class EndingCutscene : MonoBehaviour
             "\nUntil next time, Snoop Dogg\r\r\r\r\r\r\r\r, keep on jonesing.",
             "\nCredits",
             "\r",
-            "\tSkeleton Aficionado\n\n\tAlex Bucholz",
+            "\tSkeleton Aficionado\n\n\tAlex Buchholz",
             "\n\n\tVaporwave Constructor\n\n\tJacob Mintzer",
             "\n\n\tAesthetic Engineer\n\n\tCorey Byrne",
             "\n\n\tDank Meme Coordinator\n\n\tJustin Cirigiliano",
