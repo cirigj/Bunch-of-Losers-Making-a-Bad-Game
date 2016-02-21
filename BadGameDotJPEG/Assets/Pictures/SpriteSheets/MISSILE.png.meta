@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: 7450b910139047a439bf83240e811be1
-timeCreated: 1456056906
+timeCreated: 1456059368
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MISSILE_0
+    21300002: MISSILE_1
+    21300004: MISSILE_2
+    21300006: MISSILE_3
+    21300008: MISSILE_4
+    21300010: MISSILE_5
+    21300012: MISSILE_6
+    21300014: MISSILE_7
+    21300016: MISSILE_8
+    21300018: MISSILE_9
+    21300020: MISSILE_10
+    21300022: MISSILE_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +42,258 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: MISSILE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -15}
+        - {x: -3, y: -37}
+        - {x: 10, y: -37}
+        - {x: 18, y: -34}
+        - {x: 18, y: 52}
+        - {x: -9, y: 52}
+        - {x: -18, y: 30}
+    - name: MISSILE_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 312
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 52}
+        - {x: -18, y: 29}
+        - {x: -18, y: -14}
+        - {x: -7, y: -40}
+        - {x: 13, y: -40}
+        - {x: 18, y: -19}
+        - {x: 18, y: 40}
+        - {x: 7, y: 52}
+    - name: MISSILE_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 312
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 52}
+        - {x: -16, y: -36}
+        - {x: -3, y: -42}
+        - {x: 4, y: -42}
+        - {x: 16, y: -17}
+        - {x: 16, y: 36}
+        - {x: 9, y: 52}
+    - name: MISSILE_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 312
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 52}
+        - {x: -15, y: -34}
+        - {x: -13, y: -46}
+        - {x: 5, y: -46}
+        - {x: 15, y: 5}
+        - {x: 15, y: 42}
+        - {x: 3, y: 52}
+    - name: MISSILE_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 52}
+        - {x: -4, y: 52}
+        - {x: -15, y: 41}
+        - {x: -15, y: -25}
+        - {x: -3, y: -37}
+        - {x: 2, y: -37}
+        - {x: 15, y: -23}
+        - {x: 15, y: 30}
+        - {x: 13, y: 39}
+    - name: MISSILE_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 208
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 52}
+        - {x: -14, y: 52}
+        - {x: -14, y: -37}
+        - {x: -7, y: -40}
+        - {x: 1, y: -40}
+        - {x: 11, y: -29}
+        - {x: 14, y: -5}
+        - {x: 14, y: 35}
+        - {x: 12, y: 39}
+    - name: MISSILE_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 208
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 52}
+        - {x: -7, y: 52}
+        - {x: -15, y: 41}
+        - {x: -15, y: -18}
+        - {x: -4, y: -42}
+        - {x: 4, y: -42}
+        - {x: 13, y: -13}
+        - {x: 15, y: 7}
+        - {x: 15, y: 44}
+    - name: MISSILE_7
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 208
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 52}
+        - {x: -14, y: -27}
+        - {x: -3, y: -43}
+        - {x: 5, y: -43}
+        - {x: 15, y: -2}
+        - {x: 15, y: 36}
+        - {x: 5, y: 52}
+    - name: MISSILE_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 52}
+        - {x: -4, y: 52}
+        - {x: -15, y: 41}
+        - {x: -15, y: -25}
+        - {x: -3, y: -37}
+        - {x: 2, y: -37}
+        - {x: 15, y: -23}
+        - {x: 15, y: 30}
+        - {x: 13, y: 39}
+    - name: MISSILE_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 104
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 52}
+        - {x: -15, y: 35}
+        - {x: -15, y: -1}
+        - {x: -11, y: -24}
+        - {x: -3, y: -40}
+        - {x: 2, y: -40}
+        - {x: 13, y: -30}
+        - {x: 15, y: 3}
+        - {x: 15, y: 43}
+        - {x: 4, y: 52}
+    - name: MISSILE_10
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 104
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 52}
+        - {x: -13, y: 51}
+        - {x: -14, y: 39}
+        - {x: -14, y: -25}
+        - {x: -4, y: -42}
+        - {x: 8, y: -42}
+        - {x: 14, y: -6}
+        - {x: 14, y: 42}
+        - {x: 5, y: 52}
+    - name: MISSILE_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 104
+        width: 46
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 52}
+        - {x: -15, y: 43}
+        - {x: -15, y: -24}
+        - {x: -4, y: -46}
+        - {x: 2, y: -46}
+        - {x: 2, y: -45}
+        - {x: 15, y: -4}
+        - {x: 15, y: 42}
+        - {x: 3, y: 52}
     outline: []
   spritePackingTag: 
   userData: 

@@ -28,7 +28,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136730}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -62,9 +62,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.66, y: -0.48}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.64, y: 4.19}
 --- !u!95 &9558480
 Animator:
   serializedVersion: 3
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4f649d40891dd4e9aad94786d87276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxVel: 0
+  health: 50
+  maxVel: 3
   acc: 0.1
   rb: {fileID: 0}
 --- !u!114 &11448578
@@ -111,7 +111,7 @@ MonoBehaviour:
   spreadAngle: 30
   direction: {x: -1, y: -0, z: -0}
   lockTarget: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 5026974, guid: fe8eaf0a36a3ab04c8881c6c00039b6f, type: 2}
 --- !u!114 &11472876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,7 +123,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d11a5511c75cf43b23869774351156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - type: 2
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: -3, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 5
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 10
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 3
+    bullets: 4
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 5
+    angle: 0
+  - type: 8
+    waitTime: 0.5
+    waitForFinish: 1
+    position: {x: 0, y: 0, z: 0}
+    speed: 3
+    bullets: 4
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 8
+    waitTime: 0.5
+    waitForFinish: 1
+    position: {x: 0, y: 0, z: 0}
+    speed: 3
+    bullets: 5
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 11
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 3
+    bullets: 5
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 5
+    angle: 0
+  - type: 1
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 3, y: 0, z: 0}
+    speed: 3
+    bullets: 5
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 12
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 3
+    bullets: 5
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  waveManager: {fileID: 0}
 --- !u!212 &21209670
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -160,7 +241,43 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: actions.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxVel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].position.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].waitTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].waitTime
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 136730}
