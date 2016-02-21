@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11427124}
   - 114: {fileID: 11457086}
   - 114: {fileID: 11425778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BushSkel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -93,7 +93,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d11a5511c75cf43b23869774351156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - type: 2
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 3, y: 0, z: 0}
+    speed: 3
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 6
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 9
+    waitTime: 0
+    waitForFinish: 1
+    position: {x: 0, y: 0, z: 0}
+    speed: 0.001
+    bullets: 2
+    timeBetweenShots: 5
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 0
+    waitTime: 3
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 2
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 3, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 12
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 3, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
   waveManager: {fileID: 0}
 --- !u!114 &11427124
 MonoBehaviour:
@@ -106,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4f649d40891dd4e9aad94786d87276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxVel: 0
+  health: 50
+  maxVel: 3
   acc: 0.1
   rb: {fileID: 5003208}
 --- !u!114 &11457086
@@ -163,8 +223,44 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: actions.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].position.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[1].type
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxVel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: acc
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].speed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

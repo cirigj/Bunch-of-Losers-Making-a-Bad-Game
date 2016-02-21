@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11446026}
   - 114: {fileID: 11428252}
   - 114: {fileID: 11480986}
+  - 61: {fileID: 6125982}
   m_Layer: 0
   m_Name: FloppitySkel
   m_TagString: Untagged
@@ -51,7 +52,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &6140322
+--- !u!61 &6125982
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -64,7 +65,21 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.65, y: 2.64}
+--- !u!61 &6140322
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143402}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.54}
+  serializedVersion: 2
+  m_Size: {x: 2.4, y: 0.64}
 --- !u!95 &9551260
 Animator:
   serializedVersion: 3
@@ -108,8 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4f649d40891dd4e9aad94786d87276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxVel: 0
+  health: 40
+  maxVel: 2
   acc: 0.1
   rb: {fileID: 0}
 --- !u!114 &11480986
@@ -123,7 +138,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d11a5511c75cf43b23869774351156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - type: 2
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 20, z: 0}
+    speed: 2
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 12
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
   waveManager: {fileID: 0}
 --- !u!212 &21238366
 SpriteRenderer:

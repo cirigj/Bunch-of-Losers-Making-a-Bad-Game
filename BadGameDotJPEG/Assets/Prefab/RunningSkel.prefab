@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11485362}
   m_Layer: 0
   m_Name: RunningSkel
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140858}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
   m_LocalPosition: {x: -2.5, y: 2.24, z: 0}
   m_LocalScale: {x: 1.6134962, y: 1.5761626, z: 1}
   m_Children: []
@@ -64,7 +64,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.82, y: 1.69}
 --- !u!95 &9506972
 Animator:
   serializedVersion: 3
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4f649d40891dd4e9aad94786d87276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxVel: 0
+  health: 30
+  maxVel: 3
   acc: 0.1
   rb: {fileID: 0}
 --- !u!114 &11471686
@@ -123,7 +123,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d11a5511c75cf43b23869774351156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions: []
+  actions:
+  - type: 2
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 20, y: 0, z: 0}
+    speed: 3
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 0
+    waitTime: 0
+    waitForFinish: 0
+    position: {x: 0, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
   waveManager: {fileID: 0}
 --- !u!212 &21230624
 SpriteRenderer:
