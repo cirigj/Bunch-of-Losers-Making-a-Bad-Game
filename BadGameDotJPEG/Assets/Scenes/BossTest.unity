@@ -194,12 +194,9 @@ MonoBehaviour:
   spawnDepth: 0.5
   waves:
   - enemies:
-    - enemyPrefab: {fileID: 11450622, guid: 75750a08e969cde48975c3ae9932cccf, type: 2}
+    - enemyPrefab: {fileID: 11465632, guid: 21c55829ac7696244924ae6c43eecace, type: 2}
       side: 0
-      position: 1
-    - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
-      side: 0
-      position: -0
+      position: 0.73
     waitTime: 0
   currentWave: []
 --- !u!114 &21230219

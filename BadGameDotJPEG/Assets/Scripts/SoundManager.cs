@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SoundManager : MonoBehaviour
 {
+    public static SoundManager singleton;
     public AudioClip hitmarker;
     public AudioClip shoot;
     public AudioClip explosion;
@@ -17,6 +18,10 @@ public class SoundManager : MonoBehaviour
 
 	void Start ()
     {
+        if(singleton == null)
+        {
+            singleton = this;
+        }
         music.clip = StageTheme;
         music.Play();
 	}
