@@ -189,7 +189,7 @@ MonoBehaviour:
   topBuffer: 1
   bottomBuffer: 1
   sideBuffer: 1
-  spawnDepth: 0
+  spawnDepth: 0.5
   waves:
   - enemies:
     - enemyPrefab: {fileID: 11450622, guid: 75750a08e969cde48975c3ae9932cccf, type: 2}
@@ -370,11 +370,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.16595857
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.40421927
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
       propertyPath: m_LocalPosition.z
