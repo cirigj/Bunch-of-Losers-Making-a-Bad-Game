@@ -14,4 +14,6 @@ public static class Globals
         public static bool Bomb;
         public static bool Fire;
     }
+    public static float camWidth;
+    public static float camHeight;
 }
