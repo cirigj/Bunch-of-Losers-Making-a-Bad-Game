@@ -33,16 +33,19 @@ public class CharacerStats : MonoBehaviour
 
     IEnumerator DeathRoutine()
     {
-        hitCounter += 1;
-        if(Globals.Inputs.Bomb)
+        while (true)
         {
-            yield break;
+            hitCounter += 1;
+            if (Globals.Inputs.Bomb)
+            {
+                yield break;
+            }
+            if (hitCounter == 3)
+            {
+                Death();
+                yield break;
+            }
+            yield return new WaitForFixedUpdate();
         }
-        if(hitCounter == 3)
-        {
-            Death();
-            yield break;
-        }
-        yield return new WaitForFixedUpdate();
     }
 }
