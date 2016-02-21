@@ -10,9 +10,6 @@ public class BackgroundManager : MonoBehaviour {
 	void Awake ()
     {
         MovingObjects = new List<GameObject>();
-        Camera cam = Camera.main;
-        Globals.camHeight = 2f * cam.orthographicSize;
-        Globals.camWidth = Globals.camHeight * cam.aspect;
     }
 	
 	void Update ()
