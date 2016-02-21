@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class OpeningCinema : MonoBehaviour
@@ -22,8 +23,8 @@ public class OpeningCinema : MonoBehaviour
         storyBoard = new string[]
         {
             "\nHuge advancements in vaporwave aesthetic have \nenabled an artist to create an island full of \nliving skeletons.",
-            "\nThe vaporwave statue, Helios, attempts to steal \nskeleton embryos. Critical security systems are \nshut down and it now becomes a race for survival \nwith skeletons roaming freely over the island.",
-            "\nSnoop Dogg, you must defeat\r\r\r\r\r\r\r\0\0\0\0\0\0\r\r\r\r\r\rsurvive\r\r\r against the skeletons.",
+            "\nThe vaporwave statue, Helios, attempts to steal \nskeleton embryos.\r\r\r\r\r\r\r\r Critical security systems are \nshut down and it now becomes a race for survival \nwith skeletons roaming freely over the island.",
+            "\nSnoop Dogg\r\r\r\r\r\r\r\r\r\r\r, you must defeat\r\r\r\r\r\r\r\0\0\0\0\0\0\r\r\r\r\r\rsurvive\r\r\r\r\r\r\r\r\r against the skeletons.",
             "\nOr else you",
             "\r",
             "will",
@@ -33,15 +34,15 @@ public class OpeningCinema : MonoBehaviour
         };
         storySpeed = new float[]
         {
-            5f,
-            5f,
-            5f,
-            8f,
-            8f,
-            8f,
-            8f,
+            4f,
+            4f,
+            4f,
+            7f,
+            7f,
+            7f,
+            7f,
             15f,
-            5f
+            4f
         };
         storyDelays = new int[]
         {
@@ -70,7 +71,12 @@ public class OpeningCinema : MonoBehaviour
             if (storyDelay == 40)
             {
                 storyDelay = 0;
-            } 
+            }
+
+            if (Input.GetButton("Fire"))
+            {
+                SceneManager.LoadScene(1);
+            }
         }
         else if (storyDelay == storySpeed[storyNum] && storyProgress == storyBoard[storyNum].Length)
         {
@@ -108,7 +114,7 @@ public class OpeningCinema : MonoBehaviour
             else if (storyBoard[storyNum][storyProgress] == '\0')
             {
                 t.text = t.text.Substring(0, t.text.Length - 2) + "_";
-                keys.clip = keypress[Random.Range(0, keypress.Length)];
+                keys.clip = keypress[0];
                 keys.Play();
             }
             else
@@ -125,7 +131,16 @@ public class OpeningCinema : MonoBehaviour
         }
         else
         {
+            if (storyProgress < storyBoard[storyNum].Length && storyBoard[storyNum][storyProgress] == '\r')
+            {
+                string s = ((int)((storyProgress * storySpeed[storyNum] + storyDelay) / 20)) % 2 == 0 ? "_" : "▇";
+                t.text = t.text.Substring(0, t.text.Length - 1) + s;
+            }
             storyDelay++;
+            if (Input.GetButton("Fire"))
+            {
+                storyDelay = (int)storySpeed[storyNum];
+            }
         }
 	}
 }
