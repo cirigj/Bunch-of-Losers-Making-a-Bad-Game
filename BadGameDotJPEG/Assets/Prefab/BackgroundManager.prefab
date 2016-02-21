@@ -47,11 +47,12 @@ MonoBehaviour:
   - {fileID: 182226, guid: caec1d77d8e18c549b86816e90cc4fb2, type: 2}
   - {fileID: 180854, guid: dd53042137204e94f8957facf9ea4f8f, type: 2}
   - {fileID: 107810, guid: 9d583f1e7bd25094e8644b3053710b50, type: 2}
+  - {fileID: 155438, guid: 6157b0c96c0461b469f8f1ffe02f8dab, type: 2}
   Background: {fileID: 152446, guid: 7f22aeadff8611647a4c8210ec812298, type: 2}
   depths:
+  - 1
+  - 1.5
   - 2
-  - 2.33
-  - 2.66
   baseSpeed: 6
   StageTheme: {fileID: 8300000, guid: a6ee89ad015772448b9b63ac701edd3b, type: 3}
   BossTheme: {fileID: 8300000, guid: 3c15d4964d9c16b48a4c3b79572f47c5, type: 3}
