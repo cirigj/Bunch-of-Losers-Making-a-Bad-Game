@@ -6,6 +6,9 @@ public class OpeningCinema : MonoBehaviour
 {
     Text t;
     public AudioSource a;
+    public AudioSource keys;
+    public AudioClip[] keypress;
+    public AudioClip spacepress;
     string[] storyBoard;
     float[] storySpeed;
     int storyNum;
@@ -20,7 +23,7 @@ public class OpeningCinema : MonoBehaviour
         {
             "\nHuge advancements in vaporwave aesthetic have \nenabled an artist to create an island full of \nliving skeletons.",
             "\nThe vaporwave statue, Helios, attempts to steal \nskeleton embryos. Critical security systems are \nshut down and it now becomes a race for survival \nwith skeletons roaming freely over the island.",
-            "\nYou must defeat\r\r\r\r\r\r\r\0\0\0\0\0\0\r\r\r\r\r\rsurvive against the skeletons.",
+            "\nYou must defeat\r\r\r\r\r\r\r\0\0\0\0\0\0\r\r\r\r\r\rsurvive\r\r\r against the skeletons.",
             "\nOr else you",
             "\r",
             "will",
@@ -75,7 +78,11 @@ public class OpeningCinema : MonoBehaviour
             storyProgress = 0;
             storyDelay = 0;
             if (storyNum != storyBoard.Length)
+            {
                 t.text = t.text.Substring(0, t.text.Length - 1) + "\n\n";
+                keys.clip = keypress[Random.Range(0, keypress.Length - 1)];
+                keys.Play();
+            }
         }
         else if (storyProgress == 0)
         {
@@ -101,9 +108,16 @@ public class OpeningCinema : MonoBehaviour
             else if (storyBoard[storyNum][storyProgress] == '\0')
             {
                 t.text = t.text.Substring(0, t.text.Length - 2) + "_";
+                keys.clip = keypress[Random.Range(0, keypress.Length - 1)];
+                keys.Play();
             }
             else
             {
+                if (storyBoard[storyNum][storyProgress] == ' ')
+                    keys.clip = spacepress;
+                else
+                    keys.clip = keypress[Random.Range(0, keypress.Length - 1)];
+                keys.Play();
                 t.text = t.text.Substring(0, t.text.Length - 1) + storyBoard[storyNum][storyProgress] + "_";
             }
             storyProgress++;
