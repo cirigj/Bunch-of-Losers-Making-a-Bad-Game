@@ -9,6 +9,7 @@ public static class EditorSaves {
 	public static bool customToolUp;
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(BulletShooter))]
 public class BulletShooterEditor : Editor {
 
@@ -76,3 +77,4 @@ public class BulletShooterEditor : Editor {
 	}
 
 }
+#endif
