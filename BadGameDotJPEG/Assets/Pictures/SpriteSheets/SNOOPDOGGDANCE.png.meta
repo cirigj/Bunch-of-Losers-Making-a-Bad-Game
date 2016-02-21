@@ -1,9 +1,73 @@
 fileFormatVersion: 2
 guid: 688feab95987f7f4c9076819e322b92f
-timeCreated: 1456052602
+timeCreated: 1456055686
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SNOOPDOGGDANCE_0
+    21300002: SNOOPDOGGDANCE_1
+    21300004: SNOOPDOGGDANCE_2
+    21300006: SNOOPDOGGDANCE_3
+    21300008: SNOOPDOGGDANCE_4
+    21300010: SNOOPDOGGDANCE_5
+    21300012: SNOOPDOGGDANCE_6
+    21300014: SNOOPDOGGDANCE_7
+    21300016: SNOOPDOGGDANCE_8
+    21300018: SNOOPDOGGDANCE_9
+    21300020: SNOOPDOGGDANCE_10
+    21300022: SNOOPDOGGDANCE_11
+    21300024: SNOOPDOGGDANCE_12
+    21300026: SNOOPDOGGDANCE_13
+    21300028: SNOOPDOGGDANCE_14
+    21300030: SNOOPDOGGDANCE_15
+    21300032: SNOOPDOGGDANCE_16
+    21300034: SNOOPDOGGDANCE_17
+    21300036: SNOOPDOGGDANCE_18
+    21300038: SNOOPDOGGDANCE_19
+    21300040: SNOOPDOGGDANCE_20
+    21300042: SNOOPDOGGDANCE_21
+    21300044: SNOOPDOGGDANCE_22
+    21300046: SNOOPDOGGDANCE_23
+    21300048: SNOOPDOGGDANCE_24
+    21300050: SNOOPDOGGDANCE_25
+    21300052: SNOOPDOGGDANCE_26
+    21300054: SNOOPDOGGDANCE_27
+    21300056: SNOOPDOGGDANCE_28
+    21300058: SNOOPDOGGDANCE_29
+    21300060: SNOOPDOGGDANCE_30
+    21300062: SNOOPDOGGDANCE_31
+    21300064: SNOOPDOGGDANCE_32
+    21300066: SNOOPDOGGDANCE_33
+    21300068: SNOOPDOGGDANCE_34
+    21300070: SNOOPDOGGDANCE_35
+    21300072: SNOOPDOGGDANCE_36
+    21300074: SNOOPDOGGDANCE_37
+    21300076: SNOOPDOGGDANCE_38
+    21300078: SNOOPDOGGDANCE_39
+    21300080: SNOOPDOGGDANCE_40
+    21300082: SNOOPDOGGDANCE_41
+    21300084: SNOOPDOGGDANCE_42
+    21300086: SNOOPDOGGDANCE_43
+    21300088: SNOOPDOGGDANCE_44
+    21300090: SNOOPDOGGDANCE_45
+    21300092: SNOOPDOGGDANCE_46
+    21300094: SNOOPDOGGDANCE_47
+    21300096: SNOOPDOGGDANCE_48
+    21300098: SNOOPDOGGDANCE_49
+    21300100: SNOOPDOGGDANCE_50
+    21300102: SNOOPDOGGDANCE_51
+    21300104: SNOOPDOGGDANCE_52
+    21300106: SNOOPDOGGDANCE_53
+    21300108: SNOOPDOGGDANCE_54
+    21300110: SNOOPDOGGDANCE_55
+    21300112: SNOOPDOGGDANCE_56
+    21300114: SNOOPDOGGDANCE_57
+    21300116: SNOOPDOGGDANCE_58
+    21300118: SNOOPDOGGDANCE_59
+    21300120: SNOOPDOGGDANCE_60
+    21300122: SNOOPDOGGDANCE_61
+    21300124: SNOOPDOGGDANCE_62
+    21300126: SNOOPDOGGDANCE_63
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +94,1235 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: SNOOPDOGGDANCE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 124.16809}
+        - {x: -32.5, y: 82.16809}
+        - {x: -47.5, y: 33.16809}
+        - {x: -47.5, y: -47.83191}
+        - {x: -45.5, y: -111.83191}
+        - {x: -33.5, y: -127.83191}
+        - {x: 27.5, y: -127.83191}
+        - {x: 53.5, y: -12.831909}
+        - {x: 53.5, y: 87.16809}
+        - {x: 38.5, y: 124.16809}
+    - name: SNOOPDOGGDANCE_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.25, y: 124.16809}
+        - {x: -46.25, y: 62.16809}
+        - {x: -46.25, y: -112.83191}
+        - {x: -37.25, y: -127.83191}
+        - {x: 28.75, y: -127.83191}
+        - {x: 54.75, y: -14.831909}
+        - {x: 54.75, y: 90.16809}
+        - {x: 40.75, y: 124.16809}
+    - name: SNOOPDOGGDANCE_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.5, y: 126.16809}
+        - {x: 2.5, y: 126.16809}
+        - {x: -45.5, y: 79.16809}
+        - {x: -45.5, y: -127.83191}
+        - {x: 31.5, y: -127.83191}
+        - {x: 54.5, y: -24.83191}
+        - {x: 54.5, y: 99.16809}
+        - {x: 44.5, y: 124.16809}
+    - name: SNOOPDOGGDANCE_3
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.75, y: 127.16809}
+        - {x: -44.25, y: 89.16809}
+        - {x: -44.25, y: -101.83191}
+        - {x: -40.25, y: -127.83191}
+        - {x: 31.75, y: -127.83191}
+        - {x: 53.75, y: -47.83191}
+        - {x: 53.75, y: 121.16809}
+        - {x: 50.75, y: 127.16809}
+    - name: SNOOPDOGGDANCE_4
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 128.16809}
+        - {x: -42.5, y: 101.16809}
+        - {x: -42.5, y: -127.83191}
+        - {x: 33.5, y: -127.83191}
+        - {x: 53.5, y: -62.83191}
+        - {x: 53.5, y: 108.16809}
+        - {x: 42.5, y: 128.16809}
+    - name: SNOOPDOGGDANCE_5
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.75, y: 126.16809}
+        - {x: 3.75, y: 126.16809}
+        - {x: -41.25, y: 65.16809}
+        - {x: -41.25, y: -108.83191}
+        - {x: -28.25, y: -127.83191}
+        - {x: 29.75, y: -127.83191}
+        - {x: 54.75, y: 6.168091}
+        - {x: 54.75, y: 87.16809}
+        - {x: 44.75, y: 110.16809}
+    - name: SNOOPDOGGDANCE_6
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.5, y: 124.16809}
+        - {x: -42.5, y: 95.16809}
+        - {x: -42.5, y: -120.83191}
+        - {x: -34.5, y: -127.83191}
+        - {x: 32.5, y: -127.83191}
+        - {x: 52.5, y: -29.83191}
+        - {x: 52.5, y: 106.16809}
+        - {x: 43.5, y: 124.16809}
+    - name: SNOOPDOGGDANCE_7
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 4165
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.25, y: 122.16809}
+        - {x: -42.25, y: 99.16809}
+        - {x: -42.25, y: -127.83191}
+        - {x: 39.75, y: -127.83191}
+        - {x: 51.75, y: -122.83191}
+        - {x: 51.75, y: 122.16809}
+    - name: SNOOPDOGGDANCE_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41.5, y: 121.215576}
+        - {x: -11.5, y: 121.215576}
+        - {x: -43.5, y: 102.215576}
+        - {x: -43.5, y: -117.784424}
+        - {x: -31.5, y: -127.784424}
+        - {x: 27.5, y: -127.784424}
+        - {x: 40.5, y: -95.784424}
+        - {x: 49.5, y: -53.784424}
+        - {x: 49.5, y: 107.215576}
+    - name: SNOOPDOGGDANCE_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.75, y: 112.215576}
+        - {x: 19.75, y: 122.215576}
+        - {x: -22.25, y: 122.215576}
+        - {x: -48.25, y: 103.215576}
+        - {x: -48.25, y: -61.784424}
+        - {x: -40.25, y: -127.784424}
+        - {x: 27.75, y: -127.784424}
+        - {x: 40.75, y: -95.784424}
+        - {x: 51.75, y: 4.215576}
+        - {x: 51.75, y: 88.215576}
+    - name: SNOOPDOGGDANCE_10
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 123.215576}
+        - {x: -51.5, y: 85.215576}
+        - {x: -51.5, y: -68.784424}
+        - {x: -38.5, y: -127.784424}
+        - {x: 51.5, y: -127.784424}
+        - {x: 51.5, y: 123.215576}
+    - name: SNOOPDOGGDANCE_11
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.75, y: 123.215576}
+        - {x: -30.25, y: 123.215576}
+        - {x: -53.25, y: 75.215576}
+        - {x: -53.25, y: -30.784424}
+        - {x: -40.25, y: -127.784424}
+        - {x: 44.75, y: -127.784424}
+        - {x: 52.75, y: -80.784424}
+        - {x: 52.75, y: 111.215576}
+        - {x: 50.75, y: 114.215576}
+    - name: SNOOPDOGGDANCE_12
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 123.215576}
+        - {x: -53.5, y: 86.215576}
+        - {x: -53.5, y: -58.784424}
+        - {x: -32.5, y: -127.784424}
+        - {x: 41.5, y: -127.784424}
+        - {x: 51.5, y: -79.784424}
+        - {x: 51.5, y: 100.215576}
+        - {x: 27.5, y: 123.215576}
+    - name: SNOOPDOGGDANCE_13
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.25, y: 122.215576}
+        - {x: -49.25, y: 71.215576}
+        - {x: -49.25, y: -83.784424}
+        - {x: -35.25, y: -127.784424}
+        - {x: 33.75, y: -127.784424}
+        - {x: 52.75, y: -119.784424}
+        - {x: 52.75, y: 122.215576}
+    - name: SNOOPDOGGDANCE_14
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: 122.215576}
+        - {x: -28.5, y: 122.215576}
+        - {x: -44.5, y: 99.215576}
+        - {x: -44.5, y: -82.784424}
+        - {x: -40.5, y: -127.784424}
+        - {x: 34.5, y: -127.784424}
+        - {x: 52.5, y: -65.784424}
+        - {x: 52.5, y: 81.215576}
+        - {x: 39.5, y: 112.215576}
+    - name: SNOOPDOGGDANCE_15
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 3570
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.75, y: 122.215576}
+        - {x: -26.25, y: 122.215576}
+        - {x: -45.25, y: 86.215576}
+        - {x: -45.25, y: -48.784424}
+        - {x: -35.25, y: -127.784424}
+        - {x: 37.75, y: -127.784424}
+        - {x: 52.75, y: -46.784424}
+        - {x: 52.75, y: 55.215576}
+        - {x: 28.75, y: 112.215576}
+    - name: SNOOPDOGGDANCE_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: 123.26294}
+        - {x: -46.5, y: -127.73706}
+        - {x: 35.5, y: -127.73706}
+        - {x: 52.5, y: -93.73706}
+        - {x: 52.5, y: 85.26294}
+        - {x: 40.5, y: 123.26294}
+    - name: SNOOPDOGGDANCE_17
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.75, y: 125.26294}
+        - {x: -31.25, y: 125.26294}
+        - {x: -47.25, y: 105.26294}
+        - {x: -47.25, y: -87.73706}
+        - {x: -38.25, y: -127.73706}
+        - {x: 29.75, y: -127.73706}
+        - {x: 44.75, y: -80.73706}
+        - {x: 53.75, y: -45.73706}
+        - {x: 53.75, y: 58.26294}
+    - name: SNOOPDOGGDANCE_18
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 125.26294}
+        - {x: -37.5, y: 118.26294}
+        - {x: -48.5, y: 96.26294}
+        - {x: -48.5, y: -52.73706}
+        - {x: -37.5, y: -127.73706}
+        - {x: 31.5, y: -127.73706}
+        - {x: 53.5, y: -106.73706}
+        - {x: 53.5, y: 111.26294}
+        - {x: 21.5, y: 125.26294}
+    - name: SNOOPDOGGDANCE_19
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.75, y: 125.26294}
+        - {x: -40.25, y: 125.26294}
+        - {x: -49.25, y: 109.26294}
+        - {x: -49.25, y: -49.73706}
+        - {x: -34.25, y: -127.73706}
+        - {x: 39.75, y: -127.73706}
+        - {x: 46.75, y: -126.73706}
+        - {x: 52.75, y: -75.73706}
+        - {x: 52.75, y: 105.26294}
+    - name: SNOOPDOGGDANCE_20
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 123.26294}
+        - {x: -32.5, y: 123.26294}
+        - {x: -36.5, y: 122.26294}
+        - {x: -50.5, y: 78.26294}
+        - {x: -50.5, y: 23.26294}
+        - {x: -35.5, y: -127.73706}
+        - {x: 34.5, y: -127.73706}
+        - {x: 51.5, y: -58.73706}
+        - {x: 51.5, y: 71.26294}
+        - {x: 23.5, y: 111.26294}
+    - name: SNOOPDOGGDANCE_21
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.75, y: 121.26294}
+        - {x: -33.25, y: 121.26294}
+        - {x: -51.25, y: 73.26294}
+        - {x: -51.25, y: 1.2629395}
+        - {x: -40.25, y: -91.73706}
+        - {x: -33.25, y: -127.73706}
+        - {x: 39.75, y: -127.73706}
+        - {x: 52.75, y: -79.73706}
+        - {x: 52.75, y: 82.26294}
+        - {x: 29.75, y: 117.26294}
+    - name: SNOOPDOGGDANCE_22
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: -104.73706}
+        - {x: 1.5, y: -96.73706}
+        - {x: -2.5, y: -86.73706}
+        - {x: 2.5, y: -88.73706}
+        - {x: 2.5, y: -101.73706}
+        - {x: 1.5, y: -118.73706}
+        - {x: 1.5, y: -127.73706}
+        - {x: 38.5, y: -127.73706}
+        - {x: 52.5, y: -62.73706}
+        - {x: 52.5, y: 24.26294}
+        - {x: 32.5, y: 75.26294}
+        - {x: 19.5, y: 106.26294}
+        - {x: 6.5, y: 119.26294}
+        - {x: -38.5, y: 119.26294}
+        - {x: -50.5, y: 115.26294}
+        - {x: -52.5, y: 98.26294}
+        - {x: -52.5, y: -31.73706}
+        - {x: -42.5, y: -99.73706}
+        - {x: -31.5, y: -127.73706}
+        - {x: 0.5, y: -127.73706}
+        - {x: 1.5, y: -126.73706}
+        - {x: 1.5, y: -122.73706}
+        - {x: 0.5, y: -113.73706}
+    - name: SNOOPDOGGDANCE_23
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2975
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.75, y: 118.26294}
+        - {x: -33.25, y: 118.26294}
+        - {x: -53.25, y: 68.26294}
+        - {x: -53.25, y: -4.7370605}
+        - {x: -34.25, y: -127.73706}
+        - {x: 39.75, y: -127.73706}
+        - {x: 51.75, y: -83.73706}
+        - {x: 51.75, y: 41.26294}
+        - {x: 18.75, y: 114.26294}
+    - name: SNOOPDOGGDANCE_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 103.31036}
+        - {x: -1.5, y: 118.31036}
+        - {x: -27.5, y: 118.31036}
+        - {x: -44.5, y: 111.31036}
+        - {x: -55.5, y: 68.31036}
+        - {x: -55.5, y: 33.310364}
+        - {x: -49.5, y: 20.310364}
+        - {x: -41.5, y: -99.68964}
+        - {x: -31.5, y: -127.68964}
+        - {x: 30.5, y: -127.68964}
+        - {x: 48.5, y: -94.68964}
+        - {x: 51.5, y: -55.689636}
+        - {x: 51.5, y: 38.310364}
+    - name: SNOOPDOGGDANCE_25
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.25, y: 118.31036}
+        - {x: -56.25, y: 87.31036}
+        - {x: -56.25, y: -27.689636}
+        - {x: -38.25, y: -127.68964}
+        - {x: 45.75, y: -127.68964}
+        - {x: 52.75, y: -95.68964}
+        - {x: 52.75, y: 61.310364}
+        - {x: 2.75, y: 118.31036}
+    - name: SNOOPDOGGDANCE_26
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 118.31036}
+        - {x: -57.5, y: 107.31036}
+        - {x: -57.5, y: -91.68964}
+        - {x: -46.5, y: -127.68964}
+        - {x: 45.5, y: -127.68964}
+        - {x: 52.5, y: -87.68964}
+        - {x: 52.5, y: 63.310364}
+        - {x: 8.5, y: 118.31036}
+    - name: SNOOPDOGGDANCE_27
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.25, y: 117.31036}
+        - {x: -57.25, y: -126.68964}
+        - {x: -50.25, y: -127.68964}
+        - {x: 42.75, y: -127.68964}
+        - {x: 53.75, y: -79.68964}
+        - {x: 53.75, y: 81.31036}
+        - {x: 32.75, y: 117.31036}
+    - name: SNOOPDOGGDANCE_28
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -58.5, y: 115.31036}
+        - {x: -58.5, y: -114.68964}
+        - {x: -56.5, y: -127.68964}
+        - {x: 33.5, y: -127.68964}
+        - {x: 56.5, y: -48.689636}
+        - {x: 56.5, y: 37.310364}
+        - {x: 24.5, y: 115.31036}
+    - name: SNOOPDOGGDANCE_29
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58.75, y: -29.689636}
+        - {x: 58.75, y: 38.310364}
+        - {x: -3.25, y: 114.31036}
+        - {x: -43.25, y: 114.31036}
+        - {x: -57.25, y: 85.31036}
+        - {x: -57.25, y: -14.689636}
+        - {x: -30.25, y: -127.68964}
+        - {x: 29.75, y: -127.68964}
+        - {x: 40.75, y: -102.68964}
+        - {x: 52.75, y: -55.689636}
+        - {x: 51.75, y: -40.689636}
+    - name: SNOOPDOGGDANCE_30
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 115.31036}
+        - {x: -49.5, y: 115.31036}
+        - {x: -57.5, y: 102.31036}
+        - {x: -57.5, y: -68.68964}
+        - {x: -45.5, y: -127.68964}
+        - {x: 36.5, y: -127.68964}
+        - {x: 56.5, y: -73.68964}
+        - {x: 56.5, y: 30.310364}
+        - {x: 19.5, y: 113.31036}
+    - name: SNOOPDOGGDANCE_31
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2380
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.25, y: 117.31036}
+        - {x: -57.25, y: -126.68964}
+        - {x: -50.25, y: -127.68964}
+        - {x: 42.75, y: -127.68964}
+        - {x: 53.75, y: -79.68964}
+        - {x: 53.75, y: 81.31036}
+        - {x: 32.75, y: 117.31036}
+    - name: SNOOPDOGGDANCE_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.5, y: 118.35779}
+        - {x: -44.5, y: 116.35779}
+        - {x: -57.5, y: 65.35779}
+        - {x: -57.5, y: 14.357788}
+        - {x: -33.5, y: -127.64221}
+        - {x: 36.5, y: -127.64221}
+        - {x: 51.5, y: -95.64221}
+        - {x: 51.5, y: 50.357788}
+        - {x: 12.5, y: 118.35779}
+    - name: SNOOPDOGGDANCE_33
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.25, y: 118.35779}
+        - {x: -56.25, y: 87.35779}
+        - {x: -56.25, y: -27.642212}
+        - {x: -38.25, y: -127.64221}
+        - {x: 45.75, y: -127.64221}
+        - {x: 52.75, y: -95.64221}
+        - {x: 52.75, y: 61.357788}
+        - {x: 2.75, y: 118.35779}
+    - name: SNOOPDOGGDANCE_34
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: 118.35779}
+        - {x: -55.5, y: 77.35779}
+        - {x: -55.5, y: -29.642212}
+        - {x: -37.5, y: -127.64221}
+        - {x: 35.5, y: -127.64221}
+        - {x: 52.5, y: -93.64221}
+        - {x: 52.5, y: 56.357788}
+        - {x: 14.5, y: 118.35779}
+    - name: SNOOPDOGGDANCE_35
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.75, y: 118.35779}
+        - {x: -33.25, y: 118.35779}
+        - {x: -53.25, y: 68.35779}
+        - {x: -53.25, y: -4.642212}
+        - {x: -34.25, y: -127.64221}
+        - {x: 39.75, y: -127.64221}
+        - {x: 51.75, y: -83.64221}
+        - {x: 51.75, y: 41.357788}
+        - {x: 18.75, y: 114.35779}
+    - name: SNOOPDOGGDANCE_36
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 119.35779}
+        - {x: -37.5, y: 119.35779}
+        - {x: -52.5, y: 85.35779}
+        - {x: -52.5, y: -21.642212}
+        - {x: -41.5, y: -104.64221}
+        - {x: -30.5, y: -127.64221}
+        - {x: 34.5, y: -127.64221}
+        - {x: 51.5, y: -116.64221}
+        - {x: 51.5, y: 95.35779}
+        - {x: 25.5, y: 111.35779}
+    - name: SNOOPDOGGDANCE_37
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.75, y: 121.35779}
+        - {x: -33.25, y: 121.35779}
+        - {x: -51.25, y: 73.35779}
+        - {x: -51.25, y: 1.3577881}
+        - {x: -40.25, y: -91.64221}
+        - {x: -33.25, y: -127.64221}
+        - {x: 39.75, y: -127.64221}
+        - {x: 52.75, y: -79.64221}
+        - {x: 52.75, y: 82.35779}
+        - {x: 29.75, y: 117.35779}
+    - name: SNOOPDOGGDANCE_38
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: 123.35779}
+        - {x: -28.5, y: 123.35779}
+        - {x: -50.5, y: 101.35779}
+        - {x: -50.5, y: -65.64221}
+        - {x: -40.5, y: -127.64221}
+        - {x: 36.5, y: -127.64221}
+        - {x: 52.5, y: -57.642212}
+        - {x: 52.5, y: 64.35779}
+        - {x: 19.5, y: 108.35779}
+    - name: SNOOPDOGGDANCE_39
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1785
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.75, y: 125.35779}
+        - {x: -40.25, y: 125.35779}
+        - {x: -49.25, y: 109.35779}
+        - {x: -49.25, y: -49.642212}
+        - {x: -34.25, y: -127.64221}
+        - {x: 39.75, y: -127.64221}
+        - {x: 46.75, y: -126.64221}
+        - {x: 52.75, y: -75.64221}
+        - {x: 52.75, y: 105.35779}
+    - name: SNOOPDOGGDANCE_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 125.40518}
+        - {x: -38.5, y: 125.40518}
+        - {x: -48.5, y: 97.40518}
+        - {x: -48.5, y: -16.594818}
+        - {x: -33.5, y: -125.59482}
+        - {x: -28.5, y: -127.59482}
+        - {x: 27.5, y: -127.59482}
+        - {x: 52.5, y: -82.59482}
+        - {x: 52.5, y: 92.40518}
+        - {x: 24.5, y: 122.40518}
+    - name: SNOOPDOGGDANCE_41
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.75, y: 125.40518}
+        - {x: -31.25, y: 125.40518}
+        - {x: -47.25, y: 105.40518}
+        - {x: -47.25, y: -87.59482}
+        - {x: -38.25, y: -127.59482}
+        - {x: 29.75, y: -127.59482}
+        - {x: 44.75, y: -80.59482}
+        - {x: 53.75, y: -45.59482}
+        - {x: 53.75, y: 58.40518}
+    - name: SNOOPDOGGDANCE_42
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 108.40518}
+        - {x: 9.5, y: 122.40518}
+        - {x: 8.5, y: 123.40518}
+        - {x: -32.5, y: 123.40518}
+        - {x: -46.5, y: 105.40518}
+        - {x: -46.5, y: -62.59482}
+        - {x: -34.5, y: -127.59482}
+        - {x: 28.5, y: -127.59482}
+        - {x: 46.5, y: -79.59482}
+        - {x: 52.5, y: -37.59482}
+        - {x: 52.5, y: 46.40518}
+    - name: SNOOPDOGGDANCE_43
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.75, y: 122.40518}
+        - {x: -26.25, y: 122.40518}
+        - {x: -45.25, y: 86.40518}
+        - {x: -45.25, y: -48.59482}
+        - {x: -35.25, y: -127.59482}
+        - {x: 37.75, y: -127.59482}
+        - {x: 52.75, y: -46.59482}
+        - {x: 52.75, y: 55.40518}
+        - {x: 28.75, y: 112.40518}
+    - name: SNOOPDOGGDANCE_44
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 122.40518}
+        - {x: -45.5, y: 87.40518}
+        - {x: -45.5, y: -93.59482}
+        - {x: -36.5, y: -127.59482}
+        - {x: 35.5, y: -127.59482}
+        - {x: 51.5, y: -62.59482}
+        - {x: 51.5, y: 63.40518}
+        - {x: 19.5, y: 122.40518}
+    - name: SNOOPDOGGDANCE_45
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.25, y: 122.40518}
+        - {x: -49.25, y: 71.40518}
+        - {x: -49.25, y: -83.59482}
+        - {x: -35.25, y: -127.59482}
+        - {x: 33.75, y: -127.59482}
+        - {x: 52.75, y: -119.59482}
+        - {x: 52.75, y: 122.40518}
+    - name: SNOOPDOGGDANCE_46
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.5, y: 123.40518}
+        - {x: -24.5, y: 123.40518}
+        - {x: -53.5, y: 47.40518}
+        - {x: -53.5, y: -2.594818}
+        - {x: -45.5, y: -62.59482}
+        - {x: -35.5, y: -127.59482}
+        - {x: 39.5, y: -127.59482}
+        - {x: 52.5, y: -41.59482}
+        - {x: 52.5, y: 105.40518}
+        - {x: 47.5, y: 115.40518}
+    - name: SNOOPDOGGDANCE_47
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1190
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.75, y: 123.40518}
+        - {x: -30.25, y: 123.40518}
+        - {x: -53.25, y: 75.40518}
+        - {x: -53.25, y: -30.594818}
+        - {x: -40.25, y: -127.59482}
+        - {x: 44.75, y: -127.59482}
+        - {x: 52.75, y: -80.59482}
+        - {x: 52.75, y: 111.40518}
+        - {x: 50.75, y: 114.40518}
+    - name: SNOOPDOGGDANCE_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 123.45259}
+        - {x: -52.5, y: 72.45259}
+        - {x: -52.5, y: -31.54741}
+        - {x: -39.5, y: -127.54741}
+        - {x: 51.5, y: -127.54741}
+        - {x: 51.5, y: 123.45259}
+    - name: SNOOPDOGGDANCE_49
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45.75, y: 112.45259}
+        - {x: 19.75, y: 122.45259}
+        - {x: -22.25, y: 122.45259}
+        - {x: -48.25, y: 103.45259}
+        - {x: -48.25, y: -61.54741}
+        - {x: -40.25, y: -127.54741}
+        - {x: 27.75, y: -127.54741}
+        - {x: 40.75, y: -95.54741}
+        - {x: 51.75, y: 4.452591}
+        - {x: 51.75, y: 88.45259}
+    - name: SNOOPDOGGDANCE_50
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 121.45259}
+        - {x: -42.5, y: 100.45259}
+        - {x: -42.5, y: -110.54741}
+        - {x: -33.5, y: -127.54741}
+        - {x: 46.5, y: -127.54741}
+        - {x: 50.5, y: -106.54741}
+        - {x: 50.5, y: 112.45259}
+        - {x: 37.5, y: 121.45259}
+    - name: SNOOPDOGGDANCE_51
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.25, y: 122.45259}
+        - {x: -42.25, y: 99.45259}
+        - {x: -42.25, y: -127.54741}
+        - {x: 39.75, y: -127.54741}
+        - {x: 51.75, y: -122.54741}
+        - {x: 51.75, y: 122.45259}
+    - name: SNOOPDOGGDANCE_52
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 124.45259}
+        - {x: -42.5, y: 90.45259}
+        - {x: -42.5, y: -127.54741}
+        - {x: 52.5, y: -127.54741}
+        - {x: 52.5, y: 124.45259}
+    - name: SNOOPDOGGDANCE_53
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.75, y: 126.45259}
+        - {x: 3.75, y: 126.45259}
+        - {x: -41.25, y: 65.45259}
+        - {x: -41.25, y: -108.54741}
+        - {x: -28.25, y: -127.54741}
+        - {x: 29.75, y: -127.54741}
+        - {x: 54.75, y: 6.452591}
+        - {x: 54.75, y: 87.45259}
+        - {x: 44.75, y: 110.45259}
+    - name: SNOOPDOGGDANCE_54
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 128.45259}
+        - {x: 5.5, y: 127.45259}
+        - {x: -42.5, y: 89.45259}
+        - {x: -42.5, y: -127.54741}
+        - {x: 29.5, y: -127.54741}
+        - {x: 54.5, y: -7.547409}
+        - {x: 54.5, y: 83.45259}
+        - {x: 36.5, y: 128.45259}
+    - name: SNOOPDOGGDANCE_55
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 595
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.75, y: 127.45259}
+        - {x: -44.25, y: 89.45259}
+        - {x: -44.25, y: -101.54741}
+        - {x: -40.25, y: -127.54741}
+        - {x: 31.75, y: -127.54741}
+        - {x: 53.75, y: -47.54741}
+        - {x: 53.75, y: 121.45259}
+        - {x: 50.75, y: 127.45259}
+    - name: SNOOPDOGGDANCE_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 125}
+        - {x: -45.5, y: 77}
+        - {x: -45.5, y: -108}
+        - {x: -43.5, y: -128}
+        - {x: 22.5, y: -128}
+        - {x: 23.5, y: -126}
+        - {x: 53.5, y: -51}
+        - {x: 53.5, y: 125}
+    - name: SNOOPDOGGDANCE_57
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.25, y: 123}
+        - {x: -46.25, y: 96}
+        - {x: -46.25, y: -128}
+        - {x: 51.75, y: -128}
+        - {x: 54.75, y: -104}
+        - {x: 54.75, y: 123}
+    - name: SNOOPDOGGDANCE_58
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNOOPDOGGDANCE_59
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNOOPDOGGDANCE_60
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNOOPDOGGDANCE_61
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNOOPDOGGDANCE_62
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SNOOPDOGGDANCE_63
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 0
+        width: 290
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
