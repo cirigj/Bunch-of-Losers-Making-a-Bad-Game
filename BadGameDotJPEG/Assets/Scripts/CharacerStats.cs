@@ -4,14 +4,12 @@ using System.Collections;
 public class CharacerStats : MonoBehaviour
 {
     public int Lives;
-    public int Bombs;
     private bool hit;
     private int hitCounter;
 
 	void Start ()
     {
         Lives = Globals.BaseLives;
-        Bombs = Globals.BaseBombs;
         hit = false;
 	}
 	
