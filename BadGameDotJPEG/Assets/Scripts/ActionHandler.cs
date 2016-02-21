@@ -46,27 +46,23 @@ public class ActionHandler : MonoBehaviour {
 	private BulletShooter shooter;
 	private EnemyStats stats;
 
-	private Coroutine actionCoroutine;
+	public Coroutine actionCoroutine;
+
+	public WaveManager waveManager;
 
 	void Awake () {
 		shooter = GetComponent<BulletShooter>();
 		stats = GetComponent<EnemyStats>();
 	}
 
-	void Start () {
-		StartActions();
-	}
-
-	void Update () {
-		
-	}
-
-	void StartActions () {
+	public void StartActions () {
 		actionCoroutine = StartCoroutine(HandleActions());
 	}
 
-	void StopActions () {
-		StopCoroutine(actionCoroutine);
+	public void StopActions () {
+		if (actionCoroutine != null) {
+			StopCoroutine(actionCoroutine);
+		}
 		actionCoroutine = null;
 	}
 
@@ -77,7 +73,9 @@ public class ActionHandler : MonoBehaviour {
 				yield return new WaitForSeconds(actions[i].waitTime);
 				break;
 			case ActionData.Type.MoveToPosition:
-				stats.maxVel = actions[i].speed;
+				if (actions[i].speed != 0f) {
+					stats.maxVel = actions[i].speed;
+				}
 				if (actions[i].waitForFinish) {
 					yield return stats.StartCoroutine(stats.Movement((Vector2)actions[i].position));
 				}
@@ -87,7 +85,9 @@ public class ActionHandler : MonoBehaviour {
 				}
 				break;
 			case ActionData.Type.MoveRelative:
-				stats.maxVel = actions[i].speed;
+				if (actions[i].speed != 0f) {
+					stats.maxVel = actions[i].speed;
+				}
 				if (actions[i].waitForFinish) {
 					yield return stats.StartCoroutine(stats.Movement((Vector2)(actions[i].position + transform.position)));
 				}
@@ -170,7 +170,13 @@ public class ActionHandler : MonoBehaviour {
 				break;
 			}
 		}
+		actionCoroutine = null;
 		yield break;
+	}
+
+	void OnDestroy () {
+		waveManager.currentWave.Remove(this);
+		StopActions();
 	}
 
 }
