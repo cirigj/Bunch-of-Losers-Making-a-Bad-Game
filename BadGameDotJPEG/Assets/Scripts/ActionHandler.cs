@@ -179,10 +179,10 @@ public class ActionHandler : MonoBehaviour {
 		actionCoroutine = null;
 		yield break;
 	}
-
+		
 	void OnDestroy () {
 		waveManager.currentWave.Remove(this);
-		StopActions();
+		//StopActions();
 	}
 
 }
