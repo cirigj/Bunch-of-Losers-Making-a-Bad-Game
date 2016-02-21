@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class BackgroundManager : MonoBehaviour {
-
+    public static BackgroundManager singleton;
     public GameObject[] BackgroundObjects;
     public GameObject Background;
     GameObject[] Backgrounds;
@@ -15,6 +15,8 @@ public class BackgroundManager : MonoBehaviour {
 
 	void Awake ()
     {
+        if (singleton == null)
+            singleton = this;
         MovingObjects = new List<GameObject>();
     }
 

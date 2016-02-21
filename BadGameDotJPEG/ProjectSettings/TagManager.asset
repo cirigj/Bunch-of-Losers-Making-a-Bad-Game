@@ -18,8 +18,8 @@ TagManager:
   - 
   - Bullet
   - PlayerBullet
-  - Laser
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 

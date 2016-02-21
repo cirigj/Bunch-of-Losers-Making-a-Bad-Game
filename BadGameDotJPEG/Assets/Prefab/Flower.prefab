@@ -12,7 +12,8 @@ GameObject:
   - 58: {fileID: 5852066}
   - 50: {fileID: 5026974}
   - 114: {fileID: 11497194}
-  m_Layer: 0
+  - 114: {fileID: 11409012}
+  m_Layer: 8
   m_Name: Flower
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -62,6 +63,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3
+--- !u!114 &11409012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c584dfecad6bb499800b1659a931df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11497194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,6 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 10
+  readjustRotation: 0
 --- !u!212 &21246502
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -114,6 +127,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: readjustRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
