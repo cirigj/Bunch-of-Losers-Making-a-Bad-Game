@@ -45,7 +45,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -60,7 +60,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -94,17 +94,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - type: 1
+  - type: 2
     waitTime: 0
-    position: {x: 0, y: 3, z: 0}
+    waitForFinish: 1
+    position: {x: -3, y: 0, z: 0}
     speed: 3
     bullets: 0
     timeBetweenShots: 0
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
-  - type: 6
-    waitTime: 0
+  - type: 0
+    waitTime: 5
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -112,8 +114,19 @@ MonoBehaviour:
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
-  - type: 10
+  - type: 2
     waitTime: 0
+    waitForFinish: 1
+    position: {x: 3, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 12
+    waitTime: 0
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -121,24 +134,7 @@ MonoBehaviour:
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
-  - type: 8
-    waitTime: 0
-    position: {x: 0, y: 0, z: 0}
-    speed: 0
-    bullets: 0
-    timeBetweenShots: 0
-    target: {fileID: 0}
-    numberOfLoops: 0
-    angle: 0
-  - type: 11
-    waitTime: 0
-    position: {x: 0, y: 0, z: 0}
-    speed: 0
-    bullets: 0
-    timeBetweenShots: 0
-    target: {fileID: 0}
-    numberOfLoops: 0
-    angle: 0
+  waveManager: {fileID: 0}
 --- !u!114 &11428576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,7 +201,67 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: actions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].position.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].position.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[1].type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[1].waitTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].position.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].type
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].type
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].speed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103102}

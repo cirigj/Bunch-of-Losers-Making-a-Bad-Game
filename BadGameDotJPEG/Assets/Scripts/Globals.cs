@@ -38,6 +38,6 @@ public static class Globals
     {
         Camera cam = Camera.main;
         Globals._camHeight = 2f * cam.orthographicSize;
-        Globals._camWidth = Globals.camHeight * cam.aspect;
+        Globals._camWidth = Globals._camHeight * cam.aspect;
     }
 }
