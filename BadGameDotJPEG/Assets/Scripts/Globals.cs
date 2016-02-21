@@ -4,7 +4,6 @@ using System.Collections;
 public static class Globals
 {
     public static int BaseLives = 3;
-    public static int BaseBombs = 3;
     public static int Points = 0;
     public static class Inputs
     {
