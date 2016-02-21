@@ -25,7 +25,8 @@ public class OpeningCinema : MonoBehaviour
             "\r",
             "will",
             "\r",
-            "die."
+            "die.",
+            "\n\nPress Z to continue."
         };
         storySpeed = new float[]
         {
@@ -36,7 +37,8 @@ public class OpeningCinema : MonoBehaviour
             8f,
             8f,
             8f,
-            15f
+            15f,
+            5f
         };
         storyDelays = new int[]
         {
@@ -47,7 +49,8 @@ public class OpeningCinema : MonoBehaviour
             30,
             30,
             30,
-            30
+            30,
+            120
         };
         storyNum = 0;
         storyProgress = 0;
