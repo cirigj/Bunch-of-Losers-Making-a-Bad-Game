@@ -42,8 +42,9 @@ public class CharacterMovement : MonoBehaviour
 		animator.SetInteger("Horizontal", Mathf.RoundToInt(rb.velocity.x));
 
 		if (Globals.Inputs.Fire) {
-			if (canShoot) {
-				canShoot = false;
+            Camera.main.GetComponent<SoundManager>().playerFire();
+            if (canShoot) {
+                canShoot = false;
 				ActionData data = new ActionData();
 				data.bullets = bullets;
 				if (focus) {

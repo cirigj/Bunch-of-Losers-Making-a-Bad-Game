@@ -10,12 +10,8 @@ public class BackgroundManager : MonoBehaviour {
     List<GameObject> MovingObjects;
     public float[] depths;
     public float baseSpeed;
-
-    public AudioClip StageTheme;
-    public AudioClip BossTheme;
-    public AudioClip BossTheme2;
-
-    public AudioSource a;
+    public GameObject hitmarker;
+    public GameObject explosion;
 
 	void Awake ()
     {
@@ -29,8 +25,6 @@ public class BackgroundManager : MonoBehaviour {
         Backgrounds[1] = Instantiate(Background, new Vector3(18, 0f, 10.1f), Quaternion.identity) as GameObject;
         Backgrounds[0].GetComponent<Rigidbody2D>().velocity = new Vector3(-1f, 0f, 0f);
         Backgrounds[1].GetComponent<Rigidbody2D>().velocity = new Vector3(-1f, 0f, 0f);
-        a.clip = StageTheme;
-        a.Play();
     }
 	
 	void Update ()
@@ -92,5 +86,15 @@ public class BackgroundManager : MonoBehaviour {
         n.transform.localScale = new Vector3(1f / depth, 1f / depth, 1f);
         n.GetComponent<Rigidbody2D>().velocity = new Vector3(-baseSpeed / depth, 0f, 0f);
         MovingObjects.Add(n);
+    }
+
+    public void Hit(Vector3 pos)
+    {
+        Instantiate(hitmarker, pos, Quaternion.identity);
+    }
+
+    public void Death(Vector3 pos)
+    {
+        Instantiate(explosion, pos, Quaternion.identity);
     }
 }

@@ -21,7 +21,16 @@ public class EnemyStats : MonoBehaviour
             health -= 1;
             if (health == 0)
                 Death();
+            else
+                Hit(other.transform);
         }
+    }
+
+    void Hit(Transform t)
+    {
+        Camera.main.GetComponent<SoundManager>().enemyHit();
+        Camera.main.GetComponent<BackgroundManager>().Hit(t.position);
+        Destroy(t.gameObject);
     }
 
     void Death()

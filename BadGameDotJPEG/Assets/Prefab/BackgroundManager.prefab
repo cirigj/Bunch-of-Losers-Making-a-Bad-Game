@@ -54,10 +54,8 @@ MonoBehaviour:
   - 1.5
   - 2
   baseSpeed: 6
-  StageTheme: {fileID: 8300000, guid: a6ee89ad015772448b9b63ac701edd3b, type: 3}
-  BossTheme: {fileID: 8300000, guid: 3c15d4964d9c16b48a4c3b79572f47c5, type: 3}
-  BossTheme2: {fileID: 8300000, guid: d2bc6988ab2c97f4b912436e0ca8d2c7, type: 3}
-  a: {fileID: 0}
+  hitmarker: {fileID: 165972, guid: dc42324773a93f0439288fd553c820c2, type: 2}
+  explosion: {fileID: 127178, guid: e6c4f08f16f86064997c13038f43a35c, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
