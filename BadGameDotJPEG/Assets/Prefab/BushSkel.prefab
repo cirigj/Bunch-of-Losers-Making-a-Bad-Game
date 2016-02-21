@@ -114,6 +114,16 @@ MonoBehaviour:
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
+  - type: 0
+    waitTime: 0
+    waitForFinish: 1
+    position: {x: 0, y: 0, z: 0}
+    speed: 0.1
+    bullets: 2
+    timeBetweenShots: 5
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
   - type: 9
     waitTime: 0
     waitForFinish: 1
@@ -125,11 +135,11 @@ MonoBehaviour:
     numberOfLoops: 0
     angle: 0
   - type: 0
-    waitTime: 3
-    waitForFinish: 0
-    position: {x: 0, y: 0, z: 0}
-    speed: 0
-    bullets: 0
+    waitTime: 1
+    waitForFinish: 1
+    position: {x: 3, y: 0, z: 0}
+    speed: 0.1
+    bullets: 2
     timeBetweenShots: 0
     target: {fileID: 0}
     numberOfLoops: 0
@@ -146,7 +156,7 @@ MonoBehaviour:
     angle: 0
   - type: 12
     waitTime: 0
-    waitForFinish: 0
+    waitForFinish: 1
     position: {x: 3, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -224,7 +234,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: actions.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
@@ -281,6 +291,62 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: actions.Array.data[2].speed
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].type
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].waitTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].bullets
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].timeBetweenShots
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[5].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[5].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].bullets
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].waitTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[6].type
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

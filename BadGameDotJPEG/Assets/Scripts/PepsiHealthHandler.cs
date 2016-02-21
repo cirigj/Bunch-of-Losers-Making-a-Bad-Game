@@ -13,6 +13,9 @@ public class PepsiHealthHandler : MonoBehaviour {
 	void Awake () {
 		stats = GetComponent<EnemyStats>();
 		stats.health = PepsiHealth.value;
+		if (stats.health <= 0f) {
+			Destroy(gameObject);
+		}
 	}
 
 	void OnDestroy () {
