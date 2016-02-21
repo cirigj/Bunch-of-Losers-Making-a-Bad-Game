@@ -74,7 +74,7 @@ Animator:
   m_GameObject: {fileID: 143402}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2a88085f95ac0934994c170751010d74, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7591f0d06ce2f6349a9714a83cae3d9a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -166,6 +166,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7591f0d06ce2f6349a9714a83cae3d9a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143402}

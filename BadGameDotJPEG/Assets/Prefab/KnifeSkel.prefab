@@ -29,8 +29,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.4518, y: -1.3525367, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ Animator:
   m_GameObject: {fileID: 178266}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5bbb2e1453838c14e8d0f6c2bded314f, type: 2}
+  m_Controller: {fileID: 9100000, guid: c53af0284e3c64e43996675dba9d269a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4f649d40891dd4e9aad94786d87276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxVel: 0
+  health: 10
+  maxVel: 3
   acc: 0.1
   rb: {fileID: 0}
 --- !u!114 &11456414
@@ -126,8 +126,8 @@ MonoBehaviour:
   actions:
   - type: 2
     waitTime: 0
-    waitForFinish: 0
-    position: {x: 3, y: 0, z: 0}
+    waitForFinish: 1
+    position: {x: -4, y: 0, z: 0}
     speed: 0
     bullets: 0
     timeBetweenShots: 0
@@ -138,56 +138,66 @@ MonoBehaviour:
     waitTime: 0
     waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
-    speed: 0
-    bullets: 0
-    timeBetweenShots: 0
+    speed: 10
+    bullets: 12
+    timeBetweenShots: 0.1
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
   - type: 4
     waitTime: 0
+    waitForFinish: 1
+    position: {x: 0, y: 0, z: 0}
+    speed: 10
+    bullets: 12
+    timeBetweenShots: 0.1
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 10
+    waitTime: 3
     waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
     timeBetweenShots: 0
     target: {fileID: 0}
-    numberOfLoops: 0
+    numberOfLoops: 4
     angle: 0
-  - type: 0
-    waitTime: 0
+  - type: 8
+    waitTime: 0.75
     waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
+    speed: 10
+    bullets: 12
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 0
+    angle: 0
+  - type: 11
+    waitTime: 0
+    waitForFinish: 1
+    position: {x: 4, y: 0, z: 0}
+    speed: 0
+    bullets: 0
+    timeBetweenShots: 0
+    target: {fileID: 0}
+    numberOfLoops: 4
+    angle: 0
+  - type: 2
+    waitTime: 0
+    waitForFinish: 1
+    position: {x: 4, y: 0, z: 0}
     speed: 0
     bullets: 0
     timeBetweenShots: 0
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
-  - type: 0
+  - type: 12
     waitTime: 0
-    waitForFinish: 0
-    position: {x: 0, y: 0, z: 0}
-    speed: 0
-    bullets: 0
-    timeBetweenShots: 0
-    target: {fileID: 0}
-    numberOfLoops: 0
-    angle: 0
-  - type: 0
-    waitTime: 0
-    waitForFinish: 0
-    position: {x: 0, y: 0, z: 0}
-    speed: 0
-    bullets: 0
-    timeBetweenShots: 0
-    target: {fileID: 0}
-    numberOfLoops: 0
-    angle: 0
-  - type: 0
-    waitTime: 0
-    waitForFinish: 0
-    position: {x: 0, y: 0, z: 0}
+    waitForFinish: 1
+    position: {x: 4, y: 0, z: 0}
     speed: 0
     bullets: 0
     timeBetweenShots: 0
@@ -223,7 +233,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0422ed1da37cbbe42a1cbd6a5c143606, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
@@ -233,12 +243,136 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: actions.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 5000704, guid: de3ac356216dd04409bd18110ef2806c, type: 2}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].position.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[0].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[1].speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[1].bullets
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[1].timeBetweenShots
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].bullets
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].timeBetweenShots
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[2].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].waitTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].type
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].bullets
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[5].type
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[5].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[5].position.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[6].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxVel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].type
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[3].numberOfLoops
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[4].waitTime
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[6].position.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[6].waitForFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[5].numberOfLoops
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: actions.Array.data[7].type
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
