@@ -9,7 +9,7 @@ public class EnemyStats : MonoBehaviour
     public float maxVel;
     public float acc = 0.1f;
     public Rigidbody2D rb;
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }

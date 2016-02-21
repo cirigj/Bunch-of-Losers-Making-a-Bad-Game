@@ -11,17 +11,24 @@ using JBirdEngine.EditorHelper;
 namespace JBirdEngine {
 
 	namespace RopePhysics {
-
+      
 		public class JBirdRope : MonoBehaviour {
+            
 			[Header("Physical Attributes:")]
 			public float segmentLength;
 			public int numberOfSegments;
 			[Range(0f,1f)]
 			public float elasticity = 0.5f;
-			[ViewOnly][SerializeField]
-			private float _minTension;
-			[ViewOnly][SerializeField]
-			private float _maxTension;
+            #if UNITY_EDITOR
+            [ViewOnly]
+            #endif
+            [SerializeField]
+            private float _minTension;
+            #if UNITY_EDITOR
+            [ViewOnly]
+            #endif
+            [SerializeField]
+            private float _maxTension;
 			[Range(0.001f, 1f)]
 			public float tapering = 1f;
 			[Header("Anchoring:")]
@@ -29,8 +36,10 @@ namespace JBirdEngine {
 			public bool anchoredEnd;
 			[Header("Rope Segements:")]
 			public JBirdRopeNode segmentPrefab;
-			[ViewOnly]
-			public List<JBirdRopeNode> segmentList;
+            #if UNITY_EDITOR
+            [ViewOnly]
+            #endif
+            public List<JBirdRopeNode> segmentList;
 			[Header("Iteration Limit (WARNING: MODIFY AT OWN RISK):")]
 			public int iterationLimit = 500;
 			[HideInInspector]
@@ -94,7 +103,7 @@ namespace JBirdEngine {
 					segmentList[0].UpdateRopeHead();
 				}
 				lastPos = transform.position;
-				#if COLOR
+#if COLOR
 				if (useGradient && !_useGradient) {
 					MakeGradient();
 					_useGradient = useGradient;
@@ -103,7 +112,7 @@ namespace JBirdEngine {
 					ClearColor();
 					_useGradient = useGradient;
 				}
-				#endif
+#endif
 			}
 
 			public void UpdateTensionVars () {
@@ -205,7 +214,7 @@ namespace JBirdEngine {
 				}
 			}
 
-			#if COLOR
+#if COLOR
 			public void ClearColor () {
 				if (useGradient) {
 					return;
@@ -228,8 +237,8 @@ namespace JBirdEngine {
 					segmentList[i].rend.material.color = gradient[i];
 				}
 			}
-			#endif
-
+#endif
+            
 		}
 
 	}

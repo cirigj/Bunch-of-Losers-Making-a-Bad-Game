@@ -10,8 +10,10 @@ namespace JBirdEngine {
 
 		[System.Serializable]
 		public class JBirdRopeNode : MonoBehaviour {
-
-			[ViewOnly][SerializeField]
+            #if UNITY_EDITOR
+            [ViewOnly]
+            #endif
+            [SerializeField]
 			private JBirdRope _rope;
 			public JBirdRope rope {
 				get {
@@ -27,8 +29,11 @@ namespace JBirdEngine {
 				}
 			}
 
-			[ViewOnly][SerializeField]
-			private JBirdRopeNode _prev;
+            #if UNITY_EDITOR
+            [ViewOnly]
+            #endif
+            [SerializeField]
+            private JBirdRopeNode _prev;
 			public JBirdRopeNode prev {
 				get {
 					return _prev;
@@ -43,8 +48,11 @@ namespace JBirdEngine {
 				}
 			}
 
-			[ViewOnly][SerializeField]
-			private JBirdRopeNode _next;
+            #if UNITY_EDITOR
+            [ViewOnly]
+            #endif
+            [SerializeField]
+            private JBirdRopeNode _next;
 			public JBirdRopeNode next {
 				get {
 					return _next;
