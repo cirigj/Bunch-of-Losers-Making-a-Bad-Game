@@ -5,21 +5,63 @@ public class BulletShooter : MonoBehaviour {
 
 	public float spreadAngle = 30f;
 	public Vector3 direction = -Vector3.right;
+	public Transform lockTarget;
+
+	public Rigidbody2D bulletPrefab;
 
 	void Awake () {
 		
 	}
 
 	void Update () {
-		
+		if (lockTarget != null) {
+			AimAtPosition(lockTarget.position);
+		}
+		Debug.DrawRay(transform.position, direction * 20f, Color.blue);
 	}
 
-	public void StartShooting () {
-		
+	public void AimAtPosition (Vector3 position) {
+		position = new Vector3(position.x, position.y, transform.position.z + 1); //WHY DOES THIS WORK???
+		Quaternion newRotation = Quaternion.LookRotation((position - transform.position).normalized, Vector3.forward);
+		direction = newRotation * -Vector3.up;
+		direction.Normalize();
 	}
 
-	public void StopShooting () {
-		
+	public IEnumerator FireClockwise (ActionData data) {
+		for (int i = 0; i < data.bullets; i++) {
+			FireBullet(direction, data.speed);
+			yield return new WaitForSeconds(data.timeBetweenShots);
+		}
+		yield break;
+	}
+
+	public IEnumerator FireAntiClockwise (ActionData data) {
+		for (int i = 0; i < data.bullets; i++) {
+			FireBullet(direction, data.speed);
+			yield return new WaitForSeconds(data.timeBetweenShots);
+		}
+		yield break;
+	}
+
+	public IEnumerator Buckshot (ActionData data) {
+		for (int i = 0; i < data.bullets; i++) {
+			FireBullet(direction, data.speed);
+			yield return new WaitForSeconds(data.timeBetweenShots);
+		}
+		yield break;
+	}
+
+	public IEnumerator FireAtTarget (ActionData data) {
+		for (int i = 0; i < data.bullets; i++) {
+			FireBullet(direction, data.speed);
+			yield return new WaitForSeconds(data.timeBetweenShots);
+		}
+		yield break;
+	}
+
+	public void FireBullet (Vector3 direction, float speed) {
+		Rigidbody2D newBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as Rigidbody2D;
+		newBullet.velocity = direction * speed;
 	}
 
 }

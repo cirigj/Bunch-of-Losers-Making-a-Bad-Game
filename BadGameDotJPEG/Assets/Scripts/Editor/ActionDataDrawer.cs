@@ -49,7 +49,7 @@ public class ActionDataDrawer : PropertyDrawer {
 		GUI.enabled = true;
 
 		var tbs = property.FindPropertyRelative("timeBetweenShots");
-		if (type.enumValueIndex != 3 && type.enumValueIndex != 4 && type.enumValueIndex != 8 && type.enumValueIndex != 9) {
+		if (type.enumValueIndex != 3 && type.enumValueIndex != 4 && type.enumValueIndex != 9) {
 			GUI.enabled = false;
 		}
 		tbs.floatValue = EditorGUILayout.FloatField("Time Between Shots", tbs.floatValue);
@@ -63,7 +63,7 @@ public class ActionDataDrawer : PropertyDrawer {
 		GUI.enabled = true;
 
 		var loops = property.FindPropertyRelative("numberOfLoops");
-		if (type.enumValueIndex != 11) {
+		if (type.enumValueIndex != 10 && type.enumValueIndex != 11) {
 			GUI.enabled = false;
 		}
 		loops.intValue = EditorGUILayout.IntField("Number of Loops", loops.intValue);

@@ -4,12 +4,12 @@ using System.Collections;
 using UnityEditor;
 #endif
 
+#if UNITY_EDITOR
 public static class EditorSaves {
 	public static Tool prevTool;
 	public static bool customToolUp;
 }
-
-#if UNITY_EDITOR
+	
 [CustomEditor(typeof(BulletShooter))]
 public class BulletShooterEditor : Editor {
 
