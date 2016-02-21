@@ -18,9 +18,31 @@ public class SoundManager : MonoBehaviour
 	void Start ()
     {
         music.clip = StageTheme;
+        music.Play();
 	}
 	
-	void Update () {
 	
-	}
+    public void playerFire()
+    {
+        if (!player.isPlaying)
+        {
+            player.clip = shoot;
+            player.Play();
+        }
+    }
+
+    public void enemyHit()
+    {
+        if (!enemy.isPlaying)
+        {
+            enemy.clip = hitmarker;
+            enemy.Play();
+        }
+    }
+
+    public void enemyDead()
+    {
+        enemy.clip = explosion;
+        enemy.Play();
+    }
 }

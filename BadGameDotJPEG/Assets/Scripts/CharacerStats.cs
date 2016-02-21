@@ -12,11 +12,6 @@ public class CharacerStats : MonoBehaviour
         Lives = Globals.BaseLives;
         hit = false;
 	}
-	
-	void Update ()
-    {
-	    
-	}
 
     void Death()
     {
