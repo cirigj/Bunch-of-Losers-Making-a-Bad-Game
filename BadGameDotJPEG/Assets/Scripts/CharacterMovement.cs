@@ -2,7 +2,6 @@
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(BulletShooter))]
 public class CharacterMovement : MonoBehaviour
 {
@@ -25,7 +24,6 @@ public class CharacterMovement : MonoBehaviour
 
 	void Awake () {
         rb = GetComponent<Rigidbody2D>();
-		animator = GetComponent<Animator>();
 		shooter = GetComponent<BulletShooter>();
 		canShoot = true;
     }
