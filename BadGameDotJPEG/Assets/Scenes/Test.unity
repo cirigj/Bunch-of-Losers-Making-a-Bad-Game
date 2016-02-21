@@ -264,9 +264,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b34ee186c85ce24a93e0bf31ae4ab9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spreadAngle: 30
+  spreadAngle: 92.996284
   direction: {x: -1, y: 0, z: 0}
   lockTarget: {fileID: 0}
+  bulletPrefab: {fileID: 5097102, guid: b394f5ab00898e9438f1198e814ae1a0, type: 2}
 --- !u!23 &1945761290
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -371,7 +372,7 @@ MonoBehaviour:
   - type: 3
     waitTime: 1
     position: {x: 0, y: 0, z: 0}
-    speed: 3
+    speed: 8
     bullets: 5
     timeBetweenShots: 0.2
     target: {fileID: 0}
@@ -389,7 +390,7 @@ MonoBehaviour:
   - type: 4
     waitTime: 1
     position: {x: 0, y: 0, z: 0}
-    speed: 3
+    speed: 8
     bullets: 5
     timeBetweenShots: 0.2
     target: {fileID: 0}
@@ -443,7 +444,7 @@ MonoBehaviour:
   - type: 9
     waitTime: 1
     position: {x: 0, y: 0, z: 0}
-    speed: 3
+    speed: 8
     bullets: 5
     timeBetweenShots: 0.2
     target: {fileID: 0}
@@ -461,7 +462,7 @@ MonoBehaviour:
   - type: 8
     waitTime: 1
     position: {x: 0, y: 0, z: 0}
-    speed: 3
+    speed: 8
     bullets: 5
     timeBetweenShots: 0.2
     target: {fileID: 0}

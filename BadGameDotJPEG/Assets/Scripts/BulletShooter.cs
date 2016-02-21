@@ -17,19 +17,19 @@ public class BulletShooter : MonoBehaviour {
 		if (lockTarget != null) {
 			AimAtPosition(lockTarget.position);
 		}
-		Debug.DrawRay(transform.position, direction * 20f, Color.blue);
+		Debug.DrawRay(transform.position, direction * 3f, Color.blue);
 	}
 
 	public void AimAtPosition (Vector3 position) {
-		position = new Vector3(position.x, position.y, transform.position.z + 1); //WHY DOES THIS WORK???
-		Quaternion newRotation = Quaternion.LookRotation((position - transform.position).normalized, Vector3.forward);
+		position = new Vector3(position.x, position.y, transform.position.z + 10000f); //WHY DOES THIS WORK???
+		Quaternion newRotation = Quaternion.LookRotation(position - transform.position, Vector3.forward);
 		direction = newRotation * -Vector3.up;
 		direction.Normalize();
 	}
 
 	public IEnumerator FireClockwise (ActionData data) {
 		for (int i = 0; i < data.bullets; i++) {
-			FireBullet(direction, data.speed);
+			FireBullet((Quaternion.AngleAxis((spreadAngle * (float)i / (float)(data.bullets - 1) - (spreadAngle / 2f)), transform.forward) * direction).normalized, data.speed);
 			yield return new WaitForSeconds(data.timeBetweenShots);
 		}
 		yield break;
@@ -37,7 +37,7 @@ public class BulletShooter : MonoBehaviour {
 
 	public IEnumerator FireAntiClockwise (ActionData data) {
 		for (int i = 0; i < data.bullets; i++) {
-			FireBullet(direction, data.speed);
+			FireBullet((Quaternion.AngleAxis((-spreadAngle * (float)i / (float)(data.bullets - 1) + (spreadAngle / 2f)), transform.forward) * direction).normalized, data.speed);
 			yield return new WaitForSeconds(data.timeBetweenShots);
 		}
 		yield break;
@@ -45,8 +45,7 @@ public class BulletShooter : MonoBehaviour {
 
 	public IEnumerator Buckshot (ActionData data) {
 		for (int i = 0; i < data.bullets; i++) {
-			FireBullet(direction, data.speed);
-			yield return new WaitForSeconds(data.timeBetweenShots);
+			FireBullet((Quaternion.AngleAxis((spreadAngle * (float)i / (float)(data.bullets - 1) - (spreadAngle / 2f)), transform.forward) * direction).normalized, data.speed);
 		}
 		yield break;
 	}
