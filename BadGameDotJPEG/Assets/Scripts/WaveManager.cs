@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class SpawnData {
@@ -9,6 +10,7 @@ public class SpawnData {
 		Side,
 		Top,
 		Bottom,
+		Back,
 	}
 
 	public ActionHandler enemyPrefab;
@@ -56,6 +58,7 @@ public class WaveManager : MonoBehaviour {
 			yield return StartCoroutine(HandleWave(waves[i]));
 			yield return new WaitForSeconds(waves[i].waitTime);
 		}
+		SceneManager.LoadScene(2);
 		yield break;
 	}
 
@@ -96,9 +99,14 @@ public class WaveManager : MonoBehaviour {
 		float x = 0f;
 		float y = 0f;
 		float z = spawnDepth;
-		if (data.side == SpawnData.Side.Side) {
-			x = Camera.main.transform.position.x + Globals.camWidth / 2f + sideBuffer;
+		if (data.side == SpawnData.Side.Side || data.side == SpawnData.Side.Back) {
 			y = (Globals.camHeight / 2f) * data.position;
+			if (data.side == SpawnData.Side.Side) {
+				x = Camera.main.transform.position.x + Globals.camWidth / 2f + sideBuffer;
+			}
+			if (data.side == SpawnData.Side.Back) {
+				x = Camera.main.transform.position.x - Globals.camWidth / 2f - sideBuffer;
+			}
 		}
 		if (data.side == SpawnData.Side.Bottom || data.side == SpawnData.Side.Top) {
 			x = (Globals.camWidth / 2f) * data.position;

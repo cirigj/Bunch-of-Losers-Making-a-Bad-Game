@@ -15,8 +15,8 @@ GameObject:
   - 114: {fileID: 11432582}
   - 114: {fileID: 11471686}
   - 114: {fileID: 11485362}
-  m_Layer: 0
-  m_Name: RunningSkel
+  m_Layer: 8
+  m_Name: RunningSkelRight
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   actions:
   - type: 2
     waitTime: 0
-    waitForFinish: 0
+    waitForFinish: 1
     position: {x: 20, y: 0, z: 0}
     speed: 3
     bullets: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
-  - type: 0
+  - type: 12
     waitTime: 0
     waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3e42e59435f286e48bc993d12050118b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
@@ -193,6 +193,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
