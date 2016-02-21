@@ -5,22 +5,22 @@ public class EnemyStats : MonoBehaviour
 {
     public float health;
     public float maxVel;
-    public float acc;
-    public Rigidbody rb;
+    public float acc = 0.1f;
+    public Rigidbody2D rb;
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
   
     public IEnumerator Movement(Vector2 target)
     {
         rb.velocity = Vector3.zero;
         Vector2 dislocation = target - (Vector2)transform.position;
-        Vector2 unit = dislocation / dislocation.magnitude;
+		Vector2 unit = dislocation.normalized;
         while(true)
         {
             dislocation = target - (Vector2)transform.position;
-            rb.velocity = rb.velocity + (Vector3)unit * acc;
+            rb.velocity = rb.velocity + (Vector2)unit * acc;
             if (rb.velocity.magnitude > maxVel)
                 rb.velocity = unit * maxVel;
             if (dislocation.magnitude < rb.velocity.magnitude *Time.deltaTime)
@@ -29,7 +29,7 @@ public class EnemyStats : MonoBehaviour
                 rb.velocity = Vector3.zero;
                 yield break;
             }
-            yield return true;
+            yield return null;
         }
     }
 
