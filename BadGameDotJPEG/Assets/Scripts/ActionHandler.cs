@@ -20,6 +20,7 @@ public class ActionData {
 		LoopActions = 11,
 		Destroy = 12,
 		ChangeAngle = 13,
+		AimAtRelative = 14,
 	}
 
 	public Type type;
@@ -169,6 +170,9 @@ public class ActionHandler : MonoBehaviour {
 				break;
 			case ActionData.Type.ChangeAngle:
 				shooter.spreadAngle = actions[i].angle;
+				break;
+			case ActionData.Type.AimAtRelative:
+				shooter.AimAtPosition(actions[i].position + transform.position);
 				break;
 			}
 		}

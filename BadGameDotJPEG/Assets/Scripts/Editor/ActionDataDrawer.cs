@@ -35,7 +35,7 @@ public class ActionDataDrawer : PropertyDrawer {
 		GUI.enabled = true;
 
 		var pos = property.FindPropertyRelative("position");
-		if (type.enumValueIndex != 1 && type.enumValueIndex != 2 && type.enumValueIndex != 5) {
+		if (type.enumValueIndex != 1 && type.enumValueIndex != 2 && type.enumValueIndex != 5 && type.enumValueIndex != 14) {
 			GUI.enabled = false;
 		}
 		pos.vector3Value = EditorGUILayout.Vector3Field("Position", pos.vector3Value);
