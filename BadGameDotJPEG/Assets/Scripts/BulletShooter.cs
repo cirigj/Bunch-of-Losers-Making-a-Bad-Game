@@ -15,4 +15,12 @@ public class BulletShooter : MonoBehaviour {
 		
 	}
 
+	public void StartShooting () {
+		
+	}
+
+	public void StopShooting () {
+		
+	}
+
 }
