@@ -16,9 +16,9 @@ GameObject:
   - 114: {fileID: 11428252}
   - 114: {fileID: 11480986}
   - 61: {fileID: 6125982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloppitySkel
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,6 +212,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Name
       value: FloppitySkelUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Bullet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

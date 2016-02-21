@@ -319,29 +319,11 @@ MonoBehaviour:
   music: {fileID: 21230220}
   player: {fileID: 55976350}
   enemy: {fileID: 775192303}
---- !u!1 &55976349 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 165190, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
-  m_PrefabInternal: {fileID: 1302749403}
 --- !u!82 &55976350 stripped
 AudioSource:
   m_PrefabParentObject: {fileID: 8265660, guid: 9c4112b2391b4c94b99fb3036ff99ed9,
     type: 2}
   m_PrefabInternal: {fileID: 1302749403}
---- !u!58 &55976352
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 55976349}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0.12, y: 0.06}
-  serializedVersion: 2
-  m_Radius: 0.32
 --- !u!4 &55976356 stripped
 Transform:
   m_PrefabParentObject: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
@@ -421,7 +403,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.75
+      value: -5.94
       objectReference: {fileID: 0}
     - target: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -451,12 +433,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11457848, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
-      propertyPath: speed
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6140200, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1629308066

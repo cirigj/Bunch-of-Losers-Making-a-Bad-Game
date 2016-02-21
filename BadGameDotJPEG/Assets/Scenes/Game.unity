@@ -196,11 +196,146 @@ MonoBehaviour:
   - enemies:
     - enemyPrefab: {fileID: 11450622, guid: 75750a08e969cde48975c3ae9932cccf, type: 2}
       side: 0
-      position: 1
+      position: 0
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11414046, guid: c2b922bda4f739544b23b12075075c1a, type: 2}
+      side: 0
+      position: 0
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11425778, guid: e2f70fc01e02deb4dbb27e11390db742, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11472876, guid: 9fd8b8f90cadbc047819dbe651a78ce7, type: 2}
+      side: 0
+      position: -0.5
+    waitTime: 2
+  - enemies:
     - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
       side: 0
-      position: -0
-    waitTime: 0
+      position: 0
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11450622, guid: 75750a08e969cde48975c3ae9932cccf, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11450622, guid: 75750a08e969cde48975c3ae9932cccf, type: 2}
+      side: 0
+      position: -0.5
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11425778, guid: e2f70fc01e02deb4dbb27e11390db742, type: 2}
+      side: 0
+      position: 0
+    - enemyPrefab: {fileID: 11462828, guid: 451956ac03624e14ca2302f3ec03f700, type: 2}
+      side: 1
+      position: 0.325
+    - enemyPrefab: {fileID: 11480986, guid: c09a45778ca59f34eb46f0354c87b620, type: 2}
+      side: 2
+      position: -0.325
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11462828, guid: 451956ac03624e14ca2302f3ec03f700, type: 2}
+      side: 1
+      position: 0.5
+    - enemyPrefab: {fileID: 11480986, guid: c09a45778ca59f34eb46f0354c87b620, type: 2}
+      side: 2
+      position: -0.5
+    - enemyPrefab: {fileID: 11437400, guid: dc2deef2db7d7d74db6f06aaff1a833e, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11485362, guid: 4355dd655b9bbed42962bfbeccd1162f, type: 2}
+      side: 3
+      position: -0.5
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11414046, guid: c2b922bda4f739544b23b12075075c1a, type: 2}
+      side: 0
+      position: 0
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11471218, guid: a5f6aee56589bf54686e5b57b312e9c4, type: 2}
+      side: 0
+      position: 0
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
+      side: 0
+      position: -0.5
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11472876, guid: 9fd8b8f90cadbc047819dbe651a78ce7, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11425778, guid: e2f70fc01e02deb4dbb27e11390db742, type: 2}
+      side: 0
+      position: 0
+    - enemyPrefab: {fileID: 11472876, guid: 9fd8b8f90cadbc047819dbe651a78ce7, type: 2}
+      side: 0
+      position: -0.5
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
+      side: 0
+      position: -0.5
+    - enemyPrefab: {fileID: 11462828, guid: 451956ac03624e14ca2302f3ec03f700, type: 2}
+      side: 1
+      position: 0.5
+    - enemyPrefab: {fileID: 11480986, guid: c09a45778ca59f34eb46f0354c87b620, type: 2}
+      side: 2
+      position: -0.5
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11425778, guid: e2f70fc01e02deb4dbb27e11390db742, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11471218, guid: a5f6aee56589bf54686e5b57b312e9c4, type: 2}
+      side: 0
+      position: 0
+    - enemyPrefab: {fileID: 11425778, guid: e2f70fc01e02deb4dbb27e11390db742, type: 2}
+      side: 0
+      position: -0.5
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
+      side: 0
+      position: 0.5
+    - enemyPrefab: {fileID: 11472876, guid: 9fd8b8f90cadbc047819dbe651a78ce7, type: 2}
+      side: 0
+      position: 0
+    - enemyPrefab: {fileID: 11485140, guid: a4ba222e0102cb443839c8db473e8e0a, type: 2}
+      side: 0
+      position: -0.5
+    - enemyPrefab: {fileID: 11462828, guid: 451956ac03624e14ca2302f3ec03f700, type: 2}
+      side: 1
+      position: 0.65
+    - enemyPrefab: {fileID: 11480986, guid: c09a45778ca59f34eb46f0354c87b620, type: 2}
+      side: 2
+      position: -0.65
+    - enemyPrefab: {fileID: 11437400, guid: dc2deef2db7d7d74db6f06aaff1a833e, type: 2}
+      side: 0
+      position: 0.65
+    - enemyPrefab: {fileID: 11485362, guid: 4355dd655b9bbed42962bfbeccd1162f, type: 2}
+      side: 3
+      position: -0.65
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11414046, guid: c2b922bda4f739544b23b12075075c1a, type: 2}
+      side: 0
+      position: 0
+    waitTime: 2
+  - enemies:
+    - enemyPrefab: {fileID: 11465632, guid: 21c55829ac7696244924ae6c43eecace, type: 2}
+      side: 0
+      position: 0
+    waitTime: 2
   currentWave: []
 --- !u!114 &21230219
 MonoBehaviour:
@@ -424,7 +559,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.75
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: 438122, guid: 9c4112b2391b4c94b99fb3036ff99ed9, type: 2}
       propertyPath: m_LocalPosition.y

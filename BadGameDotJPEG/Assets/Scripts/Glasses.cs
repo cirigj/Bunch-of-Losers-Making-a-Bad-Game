@@ -15,15 +15,15 @@ public class Glasses : MonoBehaviour {
         Vector3 delta = (goal - transform.position) * Time.deltaTime / 5f;
         while(true)
         {
-
-            if ((goal - transform.position).magnitude < delta.magnitude)
+			Debug.Log(transform.parent.position - transform.position);
+			if ((transform.parent.position - transform.position).magnitude < .1f)
             {
                 transform.position = transform.parent.position;
                 yield break;
             }
             else
             {
-                Debug.Log(delta);
+                //Debug.Log(delta);
                 transform.position += delta;
             }
             yield return new WaitForFixedUpdate();

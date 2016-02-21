@@ -181,7 +181,7 @@ public class ActionHandler : MonoBehaviour {
 	}
 		
 	void OnDestroy () {
-		waveManager.currentWave.Remove(this);
+		WaveManager.singleton.currentWave.Remove(this);
 		//StopActions();
 	}
 
