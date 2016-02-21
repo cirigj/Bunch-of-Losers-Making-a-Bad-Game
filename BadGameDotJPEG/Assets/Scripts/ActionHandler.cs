@@ -118,7 +118,8 @@ public class ActionHandler : MonoBehaviour {
 				shooter.AimAtPosition(actions[i].position);
 				break;
 			case ActionData.Type.LockOnTarget:
-				shooter.lockTarget = actions[i].target;
+				//shooter.lockTarget = actions[i].target;
+				shooter.lockTarget = WaveManager.singleton.player;
 				break;
 			case ActionData.Type.UnlockTarget:
 				shooter.lockTarget = null;
@@ -146,13 +147,14 @@ public class ActionHandler : MonoBehaviour {
 				break;
 			case ActionData.Type.LoopActions:
 				int newIndex = -1;
-				for (int j = 0; j < actions.Count; j++) {
+				for (int j = 0; j < i; j++) {
 					if (actions[j].type == ActionData.Type.StartLoopHere) {
 						newIndex = j;
 						actions[j].numberOfLoops--;
 						if (actions[j].numberOfLoops <= 0) {
 							newIndex--;
 							actions.RemoveAt(j);
+							i--;
 						}
 					}
 				}

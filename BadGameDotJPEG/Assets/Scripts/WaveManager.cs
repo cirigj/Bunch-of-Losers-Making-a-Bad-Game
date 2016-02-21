@@ -28,6 +28,10 @@ public class EnemyWave {
 
 public class WaveManager : MonoBehaviour {
 
+	public static WaveManager singleton;
+
+	public Transform player;
+
 	public float topBuffer = 1f;
 	public float bottomBuffer = 1f;
 	public float sideBuffer = 1f;
@@ -36,6 +40,12 @@ public class WaveManager : MonoBehaviour {
 
 	public List<EnemyWave> waves;
 	public List<ActionHandler> currentWave;
+
+	void Awake () {
+		if (singleton == null) {
+			singleton = this;
+		}
+	}
 
 	void Start () {
 		StartCoroutine(SpawnWaves());

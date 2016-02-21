@@ -28,24 +28,27 @@ public class BulletShooter : MonoBehaviour {
 	}
 
 	public IEnumerator FireClockwise (ActionData data) {
+		float lockedAngle = spreadAngle;
 		for (int i = 0; i < data.bullets; i++) {
-			FireBullet((Quaternion.AngleAxis((spreadAngle * (float)i / (float)(data.bullets - 1) - (spreadAngle / 2f)), transform.forward) * direction).normalized, data.speed);
+			FireBullet((Quaternion.AngleAxis((lockedAngle * (float)i / (float)(data.bullets - 1) - (lockedAngle / 2f)), transform.forward) * direction).normalized, data.speed);
 			yield return new WaitForSeconds(data.timeBetweenShots);
 		}
 		yield break;
 	}
 
 	public IEnumerator FireAntiClockwise (ActionData data) {
+		float lockedAngle = spreadAngle;
 		for (int i = 0; i < data.bullets; i++) {
-			FireBullet((Quaternion.AngleAxis((-spreadAngle * (float)i / (float)(data.bullets - 1) + (spreadAngle / 2f)), transform.forward) * direction).normalized, data.speed);
+			FireBullet((Quaternion.AngleAxis((-lockedAngle * (float)i / (float)(data.bullets - 1) + (lockedAngle / 2f)), transform.forward) * direction).normalized, data.speed);
 			yield return new WaitForSeconds(data.timeBetweenShots);
 		}
 		yield break;
 	}
 
 	public IEnumerator Buckshot (ActionData data) {
+		float lockedAngle = spreadAngle;
 		for (int i = 0; i < data.bullets; i++) {
-			FireBullet((Quaternion.AngleAxis((spreadAngle * (float)i / (float)(data.bullets - 1) - (spreadAngle / 2f)), transform.forward) * direction).normalized, data.speed);
+			FireBullet((Quaternion.AngleAxis((lockedAngle * (float)i / (float)(data.bullets - 1) - (lockedAngle / 2f)), transform.forward) * direction).normalized, data.speed);
 		}
 		yield break;
 	}
