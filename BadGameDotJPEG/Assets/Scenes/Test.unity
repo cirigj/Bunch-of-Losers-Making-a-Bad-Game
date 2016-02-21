@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b34ee186c85ce24a93e0bf31ae4ab9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spreadAngle: 92.996284
+  spreadAngle: 720
   direction: {x: -1, y: 0, z: 0}
   lockTarget: {fileID: 0}
   bulletPrefab: {fileID: 5097102, guid: b394f5ab00898e9438f1198e814ae1a0, type: 2}
@@ -342,17 +342,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - type: 0
+  - type: 13
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
     timeBetweenShots: 0
     target: {fileID: 0}
     numberOfLoops: 0
-    angle: 0
+    angle: 720
   - type: 6
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -362,6 +364,7 @@ MonoBehaviour:
     angle: 0
   - type: 2
     waitTime: 0
+    waitForFinish: 1
     position: {x: -5, y: 0, z: 0}
     speed: 3
     bullets: 0
@@ -370,16 +373,18 @@ MonoBehaviour:
     numberOfLoops: 0
     angle: 0
   - type: 3
-    waitTime: 1
+    waitTime: 0
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 8
-    bullets: 5
+    bullets: 24
     timeBetweenShots: 0.2
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
   - type: 0
-    waitTime: 1
+    waitTime: 0
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -388,16 +393,18 @@ MonoBehaviour:
     numberOfLoops: 0
     angle: 0
   - type: 4
-    waitTime: 1
+    waitTime: 0
+    waitForFinish: 1
     position: {x: 0, y: 0, z: 0}
     speed: 8
-    bullets: 5
+    bullets: 24
     timeBetweenShots: 0.2
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
   - type: 0
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -407,6 +414,7 @@ MonoBehaviour:
     angle: 0
   - type: 7
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -416,6 +424,7 @@ MonoBehaviour:
     angle: 0
   - type: 5
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -425,6 +434,7 @@ MonoBehaviour:
     angle: 0
   - type: 2
     waitTime: 1
+    waitForFinish: 1
     position: {x: 3, y: 0, z: 0}
     speed: 3
     bullets: 0
@@ -434,6 +444,7 @@ MonoBehaviour:
     angle: 0
   - type: 0
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
@@ -443,6 +454,7 @@ MonoBehaviour:
     angle: 0
   - type: 9
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 8
     bullets: 5
@@ -450,26 +462,29 @@ MonoBehaviour:
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
-  - type: 0
+  - type: 13
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0
     timeBetweenShots: 0
     target: {fileID: 0}
     numberOfLoops: 0
-    angle: 0
+    angle: 90
   - type: 8
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 8
-    bullets: 5
+    bullets: 7
     timeBetweenShots: 0.2
     target: {fileID: 0}
     numberOfLoops: 0
     angle: 0
   - type: 11
     waitTime: 1
+    waitForFinish: 0
     position: {x: 0, y: 0, z: 0}
     speed: 0
     bullets: 0

@@ -24,7 +24,8 @@ public class ActionData {
 
 	public Type type;
 
-	public float waitTime; //Wait
+	public float waitTime; //Wait, MoveToPosition, MoveRelative, FireClockwise, FireAntiClockwise, Buckshot, FireAtTarget
+	public bool waitForFinish; //MoveToPosition, MoveRelative, FireClockwise, FireAntiClockwise, Buckshot, FireAtTarget
 	public Vector3 position; //MoveToPosition, MoveRelative, AimAtPosition
 	public float speed; //MoveToPosition, MoveRelative, FireClockwise, FireAntiClockwise, Buckshot, FireAtTarget
 	public int bullets; //FireClockwise, FireAntiClockwise, Buckshot, FireAtTarget
@@ -77,17 +78,41 @@ public class ActionHandler : MonoBehaviour {
 				break;
 			case ActionData.Type.MoveToPosition:
 				stats.maxVel = actions[i].speed;
-				yield return stats.StartCoroutine(stats.Movement((Vector2)actions[i].position));
+				if (actions[i].waitForFinish) {
+					yield return stats.StartCoroutine(stats.Movement((Vector2)actions[i].position));
+				}
+				else {
+					stats.StartCoroutine(stats.Movement((Vector2)actions[i].position));
+					yield return new WaitForSeconds(actions[i].waitTime);
+				}
 				break;
 			case ActionData.Type.MoveRelative:
 				stats.maxVel = actions[i].speed;
-				yield return stats.StartCoroutine(stats.Movement((Vector2)(actions[i].position + transform.position)));
+				if (actions[i].waitForFinish) {
+					yield return stats.StartCoroutine(stats.Movement((Vector2)(actions[i].position + transform.position)));
+				}
+				else {
+					stats.StartCoroutine(stats.Movement((Vector2)(actions[i].position + transform.position)));
+					yield return new WaitForSeconds(actions[i].waitTime);
+				}
 				break;
 			case ActionData.Type.FireClockwise:
-				yield return shooter.StartCoroutine(shooter.FireClockwise(actions[i]));
+				if (actions[i].waitForFinish) {
+					yield return shooter.StartCoroutine(shooter.FireClockwise(actions[i]));
+				}
+				else {
+					shooter.StartCoroutine(shooter.FireClockwise(actions[i]));
+					yield return new WaitForSeconds(actions[i].waitTime);
+				}
 				break;
 			case ActionData.Type.FireAntiClockwise:
-				yield return shooter.StartCoroutine(shooter.FireAntiClockwise(actions[i]));
+				if (actions[i].waitForFinish) {
+					yield return shooter.StartCoroutine(shooter.FireAntiClockwise(actions[i]));
+				}
+				else {
+					shooter.StartCoroutine(shooter.FireAntiClockwise(actions[i]));
+					yield return new WaitForSeconds(actions[i].waitTime);
+				}
 				break;
 			case ActionData.Type.AimAtPosition:
 				shooter.AimAtPosition(actions[i].position);
@@ -99,10 +124,22 @@ public class ActionHandler : MonoBehaviour {
 				shooter.lockTarget = null;
 				break;
 			case ActionData.Type.Buckshot:
-				yield return shooter.StartCoroutine(shooter.Buckshot(actions[i]));
+				if (actions[i].waitForFinish) {
+					yield return shooter.StartCoroutine(shooter.Buckshot(actions[i]));
+				}
+				else {
+					shooter.StartCoroutine(shooter.Buckshot(actions[i]));
+					yield return new WaitForSeconds(actions[i].waitTime);
+				}
 				break;
 			case ActionData.Type.FireAtTarget:
-				yield return shooter.StartCoroutine(shooter.FireAtTarget(actions[i]));
+				if (actions[i].waitForFinish) {
+					yield return shooter.StartCoroutine(shooter.FireAtTarget(actions[i]));
+				}
+				else {
+					shooter.StartCoroutine(shooter.FireAtTarget(actions[i]));
+					yield return new WaitForSeconds(actions[i].waitTime);
+				}
 				break;
 			case ActionData.Type.StartLoopHere:
 				//Do nothing
