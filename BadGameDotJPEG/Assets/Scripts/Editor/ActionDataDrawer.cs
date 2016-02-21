@@ -21,10 +21,17 @@ public class ActionDataDrawer : PropertyDrawer {
 		EditorGUILayout.Space();
 
 		var waitTime = property.FindPropertyRelative("waitTime");
-		if (type.enumValueIndex != 0) {
+		if (type.enumValueIndex != 0 && type.enumValueIndex != 1 && type.enumValueIndex != 2 && type.enumValueIndex != 3 && type.enumValueIndex != 4 && type.enumValueIndex != 8 && type.enumValueIndex != 9) {
 			GUI.enabled = false;
 		}
 		waitTime.floatValue = EditorGUILayout.FloatField("Wait Time", waitTime.floatValue);
+		GUI.enabled = true;
+
+		var waitForFinish = property.FindPropertyRelative("waitForFinish");
+		if (type.enumValueIndex != 1 && type.enumValueIndex != 2 && type.enumValueIndex != 3 && type.enumValueIndex != 4 && type.enumValueIndex != 8 && type.enumValueIndex != 9) {
+			GUI.enabled = false;
+		}
+		waitForFinish.boolValue = EditorGUILayout.Toggle("Wait Until Finished", waitForFinish.boolValue);
 		GUI.enabled = true;
 
 		var pos = property.FindPropertyRelative("position");

@@ -23,7 +23,7 @@ public class OpeningCinema : MonoBehaviour
         {
             "\nHuge advancements in vaporwave aesthetic have \nenabled an artist to create an island full of \nliving skeletons.",
             "\nThe vaporwave statue, Helios, attempts to steal \nskeleton embryos. Critical security systems are \nshut down and it now becomes a race for survival \nwith skeletons roaming freely over the island.",
-            "\nYou must defeat\r\r\r\r\r\r\r\0\0\0\0\0\0\r\r\r\r\r\rsurvive\r\r\r against the skeletons.",
+            "\nSnoop Dogg, you must defeat\r\r\r\r\r\r\r\0\0\0\0\0\0\r\r\r\r\r\rsurvive\r\r\r against the skeletons.",
             "\nOr else you",
             "\r",
             "will",
@@ -108,7 +108,7 @@ public class OpeningCinema : MonoBehaviour
             else if (storyBoard[storyNum][storyProgress] == '\0')
             {
                 t.text = t.text.Substring(0, t.text.Length - 2) + "_";
-                keys.clip = keypress[Random.Range(0, keypress.Length - 1)];
+                keys.clip = keypress[Random.Range(0, keypress.Length)];
                 keys.Play();
             }
             else
@@ -116,7 +116,7 @@ public class OpeningCinema : MonoBehaviour
                 if (storyBoard[storyNum][storyProgress] == ' ')
                     keys.clip = spacepress;
                 else
-                    keys.clip = keypress[Random.Range(0, keypress.Length - 1)];
+                    keys.clip = keypress[Random.Range(0, keypress.Length)];
                 keys.Play();
                 t.text = t.text.Substring(0, t.text.Length - 1) + storyBoard[storyNum][storyProgress] + "_";
             }
