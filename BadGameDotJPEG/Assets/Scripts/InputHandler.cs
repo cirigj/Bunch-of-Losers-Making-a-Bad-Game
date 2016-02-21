@@ -12,4 +12,3 @@ public class InputHandler : MonoBehaviour
         Globals.Inputs.Focus = Input.GetButton("Focus");
 	}
 }
-
