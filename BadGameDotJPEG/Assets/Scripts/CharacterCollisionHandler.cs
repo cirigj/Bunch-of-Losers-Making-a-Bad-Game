@@ -14,6 +14,11 @@ public class CharacterCollisionHandler : MonoBehaviour
         if(other.tag == "Bullet")
         {
             cs.StartDeathRoutine();
+            Destroy(other.gameObject);
+        }
+        else if(other.tag == "Laser")
+        {
+            cs.StartDeathRoutine();
         }
     }
 }

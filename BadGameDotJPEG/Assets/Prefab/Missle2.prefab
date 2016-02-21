@@ -11,7 +11,7 @@ GameObject:
   - 50: {fileID: 5000704}
   - 61: {fileID: 6185066}
   - 114: {fileID: 11475568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Missle2
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 402936}
   - 212: {fileID: 21219546}
   - 95: {fileID: 9532996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 5
+  readjustRotation: 1
 --- !u!212 &21219546
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -172,6 +173,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: lifetime
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

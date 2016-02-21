@@ -16,10 +16,11 @@ public class EnemyStats : MonoBehaviour
   
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "playerBullet")
+        if (other.tag == "Player Bullet")
         {
+            Debug.Log("hello");
             health -= 1;
-            if (health == 0)
+            if (health <= 0)
                 Death();
             else
                 Hit(other.transform);
@@ -29,13 +30,14 @@ public class EnemyStats : MonoBehaviour
     void Hit(Transform t)
     {
         Camera.main.GetComponent<SoundManager>().enemyHit();
-        Camera.main.GetComponent<BackgroundManager>().Hit(t.position);
+        BackgroundManager.singleton.Hit(t.position);
         Destroy(t.gameObject);
     }
 
     void Death()
     {
-
+        BackgroundManager.singleton.Death(transform.position);
+        Destroy(gameObject);
     }
 
     public IEnumerator Movement(Vector2 target)
