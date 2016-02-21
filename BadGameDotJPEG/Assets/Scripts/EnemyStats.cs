@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+[ RequireComponent(typeof(Rigidbody)) ]
+[ RequireComponent(typeof(Collider2D)) ]
 
 public class EnemyStats : MonoBehaviour
 {
@@ -12,6 +14,21 @@ public class EnemyStats : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
   
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "playerBullet")
+        {
+            health -= 1;
+            if (health == 0)
+                Death();
+        }
+    }
+
+    void Death()
+    {
+
+    }
+
     public IEnumerator Movement(Vector2 target)
     {
         rb.velocity = Vector3.zero;
