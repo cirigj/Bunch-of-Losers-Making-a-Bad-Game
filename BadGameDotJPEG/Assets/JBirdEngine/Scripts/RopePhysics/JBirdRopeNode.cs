@@ -23,9 +23,6 @@ namespace JBirdEngine {
 					if (_rope == null) {
 						_rope = value;
 					}
-					else {
-						_rope = _rope;
-					}
 				}
 			}
 
